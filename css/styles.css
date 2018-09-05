@@ -28,13 +28,11 @@ html {
 	}
 }
 
-.icons-social i {
-	font-size: 3em;
-}
-
 /* Custom Styles */
 
 main {
+    background: #303F9F;
+    color: #FAFAFA;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -44,23 +42,37 @@ main {
 }
 
 main > .intro {
-	font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 }
 
 main > .tagline {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 	margin: 1.5rem 0;
-	font-weight: 100;
+    font-weight: 100;
+    
+    
 }
 
+p { 
+    line-height: 50px;
+}
 .icons-social i {
-	padding: 10px;
+    padding: 20px;
+    font-size: 3em;
+}
+
+.icons-social a {
+    color: #FAFAFA;
+}
+
+.icons-social a svg path{
+    fill: #FAFAFA;
 }
 
 .devto {
-	margin-bottom: -0.20rem;
+    margin-bottom: -0.20rem;
 }
 
 .devto svg {
