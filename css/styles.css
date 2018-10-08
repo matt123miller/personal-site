@@ -37,27 +37,43 @@ main {
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: center;
-	padding: 0 30px;
+	padding: 0 50px;
 	text-align: center;
 }
 
-main > .intro {
+
+p { 
+    line-height: 35px;
+}
+
+a {
+
+}
+.intro {
     font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 }
 
-main > .tagline {
+.tagline {
     font-size: 1.5rem;
 	margin: 1.5rem 0;
     font-weight: 100;
-    
+	justify-content: center;
+    text-align: center;
     
 }
 
-p { 
-    line-height: 50px;
+.body-content {
+
+    font-size: 1rem;
+	margin: 1.5rem 0;
+    font-weight: 100;
+	justify-content: center;
+	text-align: left;
+    
 }
+
 .icons-social i {
     padding: 20px;
     font-size: 3em;
