@@ -131,7 +131,7 @@ h3 {
     margin: auto;
     margin-bottom: 30px;
     margin-top: 30px;
-    width: auto;
+    max-width: 50%;
 }
 
 .icons-social i {
