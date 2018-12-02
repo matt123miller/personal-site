@@ -20,10 +20,7 @@ We could declare variables with a smaller scope, but they could only be used wit
   color: var(--light-shades);
 }
 .text-warning {
-  color: #e88418;
-}
-.text-primary {
-  color: #b15650;
+  color: var(--warning);
 }
 .text-danger {
   color: var(--danger);
@@ -32,7 +29,7 @@ We could declare variables with a smaller scope, but they could only be used wit
   color: var(--success);
 }
 .text-info {
-  color: #e29fba;
+  color: var(--light-accent);
 }
 .text-terracotta {
   color: var(--dark-shades);
@@ -106,7 +103,7 @@ h3 {
   text-align: center;
 }
 
-.card-header {
+.skills-card div {
   background-color: var(--light-shades);
   margin-top: -25px;
   margin-left: 10%;
@@ -139,7 +136,7 @@ h3 {
 }
 
 .icons-social svg path {
-  fill: #f7faf7;
+  fill: var(--dark-shades);
 }
 
 .devto {
