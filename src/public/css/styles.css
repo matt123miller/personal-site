@@ -12,49 +12,45 @@ We could declare variables with a smaller scope, but they could only be used wit
     --light-accent:#efc697;
     --main-brand:#f5903b;
     --dark-accent:#b4b2b2;
-    --dark-shades:#dc3634;
+    --dark-shades:#b15650;
+    --dark-shades-highlight:#dc3634;
+    --success: #6a9450;
+    --warning: #e88418;
+}
+.text-white{
+    color: var(--light-shades);
+}
+.description, .card-description, .footer-big p {
+    color: #c8c87f; 
+}
+.text-warning {
+    color: #e88418; 
+}
+.text-primary {
+    color: #b15650; 
+}
+.text-danger {
+    color: var(--danger); 
+}
+.text-success {
+    color: var(--success); 
+}
+.text-info {
+    color: #e29fba; 
+}
+.text-rose {
+    color: #e91e63; 
+}
+.text-gray {
+    color: var(--dark-accent);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    font-family: 'Reem Kufi', sans-serif;
-}
-
-@media (min-width: 576px) {
-	html {
-		font-size: 14px;
-	}
-}
-
-@media (min-width: 768px) {
-	html {
-		font-size: 16px;
-	}
-}
-
-@media (min-width: 992px) {
-	html {
-		font-size: 18px;
-	}
-}
-
-@media (min-width: 1200px) {
-	html {
-		font-size: 20px;
-	}
-}
 
 /* Custom Styles */
 
 main {
-    background: #303F9F;
-    color: #f7faf7;
+    background: var(--dark-accent);
+    color: var(--light-shades);
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -62,7 +58,7 @@ main {
 }
 
 footer {
-    background-color: #efc697; 
+    background-color: var(--light-accent); 
     /* #303F9F */
 }
 
@@ -105,7 +101,8 @@ h3 {
 
 
 .skills-card {
-    background-color: #f5903b;
+    background-color: var(--dark-shades);
+    color: var(--light-accent);
     text-align: left;
     width: 300px;
     font-size: 1.4em;
@@ -114,6 +111,15 @@ h3 {
 .skills-card h3 {
     padding-top: 10px;
     text-align: center
+}
+
+.card-header { 
+    background-color: var(--light-shades);
+    color: var(--dark-shades);
+    margin-top: -25px;
+    margin-left: 10%;
+    padding: 0.3rem;
+    width: 80%;
 }
 
 /* Padding the li doesn't move the bullet point, only the text! Weird. */
@@ -155,4 +161,42 @@ h3 {
 	margin-left: 0.675rem;;
 	width: 2.65rem;
 	height: 2.65rem;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
 }
