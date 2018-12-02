@@ -19,11 +19,6 @@ We could declare variables with a smaller scope, but they could only be used wit
 .text-white {
   color: var(--light-shades);
 }
-.description,
-.card-description,
-.footer-big p {
-  color: #c8c87f;
-}
 .text-warning {
   color: #e88418;
 }
@@ -39,8 +34,8 @@ We could declare variables with a smaller scope, but they could only be used wit
 .text-info {
   color: #e29fba;
 }
-.text-rose {
-  color: #e91e63;
+.text-terracotta {
+  color: var(--dark-shades);
 }
 .text-gray {
   color: var(--dark-accent);
@@ -101,7 +96,6 @@ h3 {
 
 .skills-card {
   background-color: var(--dark-shades);
-  color: var(--light-accent);
   text-align: left;
   width: 300px;
   font-size: 1.4em;
@@ -114,7 +108,6 @@ h3 {
 
 .card-header {
   background-color: var(--light-shades);
-  color: var(--dark-shades);
   margin-top: -25px;
   margin-left: 10%;
   padding: 0.3rem;
