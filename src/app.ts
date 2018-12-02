@@ -24,6 +24,8 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname + '/public'))
+
 app.set("port", process.env.PORT || 3000);
 
 export default app;

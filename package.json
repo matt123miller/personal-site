@@ -5,6 +5,7 @@
     "main": "dist/server.js",
     "scripts": {
         "test": "echo 'must implement tests'",
+        "prebuild": "rm -rf dist",
         "build": "tsc",
         "postbuild": "cp -r src/views dist/views && cp -r src/public/css dist/public/css",
         "serve:dev": "npm run build && npm run serve",

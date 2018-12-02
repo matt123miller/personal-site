@@ -21,5 +21,6 @@ app.use(body_parser_1.default.urlencoded({
     extended: true
 }));
 app.use(body_parser_1.default.json());
+app.use(express_1.default.static(__dirname + '/public'));
 app.set("port", process.env.PORT || 3000);
 exports.default = app;

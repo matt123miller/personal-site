@@ -3,10 +3,11 @@ var titleCharacters = document.getElementById('name_title');
 titleCharacters.childNodes.forEach(function (character) {
     character.addEventListener('pointerenter', toggleCharacters);
 });
-var toggleCharacters = function (evt) {
+function toggleCharacters(evt) {
+    // Trust me Typescript, it's a html element
     var target = evt.target;
     target.style.color = getRandomColor();
-};
+}
 function getRandomColor() {
     var characters = '0123456789ABCDEF';
     // could use array.reduce if I was feeling fancy.
