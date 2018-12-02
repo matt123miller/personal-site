@@ -4,9 +4,11 @@
     "description": "",
     "main": "dist/server.js",
     "scripts": {
-        "test": "node index.js",
+        "test": "echo 'must implement tests'",
+        "build": "tsc",
+        "postbuild": "cp -r src/views dist/views && cp -r src/public/css dist/public/css",
+        "serve:dev": "npm run build && npm run serve",
         "serve": "node dist/server.js",
-        "build:serve": "tsc && node dist/server.js",
         "debug": "tsc && node dist/server.js"
     },
     "repository": {

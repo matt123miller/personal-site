@@ -13,7 +13,7 @@ dotenv.config({ path: '.env' });
 
 const app = express();
 
-nunjucks.configure('views', {
+nunjucks.configure(__dirname + '/views', {
     autoescape: true,
     express: app
 });
