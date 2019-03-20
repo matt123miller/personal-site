@@ -16,8 +16,9 @@ dotenv_1.default.config({ path: '.env' });
 var app = express_1.default();
 nunjucks_1.default.configure(__dirname + '/views', {
     autoescape: true,
-    express: app
+    express: app,
 });
+app.set('view engine', 'njk');
 app.use(body_parser_1.default.urlencoded({
     extended: true
 }));

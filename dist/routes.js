@@ -11,7 +11,8 @@ var HomeController = __importStar(require("./controllers/home"));
 // export class Router {
 exports.setupRoutes = function (app) {
     app.get('/', function (req, res) {
-        return res.render('index.html');
+        //@ts-ignore
+        return res.render('index', req.locals);
     });
     app.get('/index', HomeController.index);
     return app;

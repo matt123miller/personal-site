@@ -8,7 +8,8 @@ export let setupRoutes = (app: Application) => {
 
     app.get('/', (req: Request, res: Response) => {
 
-        return res.render('layout');
+        //@ts-ignore
+        return res.render('index', req.locals);
     });
 
     app.get('/index', HomeController.index);
