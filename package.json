@@ -9,7 +9,9 @@
     "scripts": {
         "test": "echo 'must implement tests'",
         "prebuild": "rm -rf dist",
-        "build": "tsc",
+        "build": "npm run build:css && npm run build:ts",
+        "build:css": "tailwind build src/public/css/styles.css -o src/public/css/output.css",
+        "build:ts": "tsc",
         "postbuild": "cp -r src/views dist/views && cp -r src/public/css dist/public/css",
         "serve:dev": "npm run build && npm run serve",
         "serve": "node dist/server.js",

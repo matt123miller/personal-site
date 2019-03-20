@@ -16,8 +16,11 @@ const app = express();
 
 nunjucks.configure(__dirname + '/views', {
     autoescape: true,
-    express: app
+    express: app,
+
 });
+
+app.set('view engine', 'njk');
 
 app.use(bodyParser.urlencoded({
     extended: true
