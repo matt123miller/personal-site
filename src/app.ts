@@ -7,6 +7,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import nunjucks from 'nunjucks';
+import templateHelpersInserter from "./middleware/templateHelpersInserter";
 
 dotenv.config({ path: '.env' });
 
@@ -23,6 +24,8 @@ app.use(bodyParser.urlencoded({
 }))
 
 app.use(bodyParser.json());
+
+app.use(templateHelpersInserter);
 
 app.use(express.static(__dirname + '/public'))
 

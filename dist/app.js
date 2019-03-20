@@ -11,6 +11,7 @@ var express_1 = __importDefault(require("express"));
 var body_parser_1 = __importDefault(require("body-parser"));
 var dotenv_1 = __importDefault(require("dotenv"));
 var nunjucks_1 = __importDefault(require("nunjucks"));
+var templateHelpersInserter_1 = __importDefault(require("./middleware/templateHelpersInserter"));
 dotenv_1.default.config({ path: '.env' });
 var app = express_1.default();
 nunjucks_1.default.configure(__dirname + '/views', {
@@ -21,6 +22,7 @@ app.use(body_parser_1.default.urlencoded({
     extended: true
 }));
 app.use(body_parser_1.default.json());
+app.use(templateHelpersInserter_1.default);
 app.use(express_1.default.static(__dirname + '/public'));
 app.set("port", process.env.PORT || 3000);
 exports.default = app;
