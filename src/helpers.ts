@@ -17,6 +17,14 @@ export const icon = (name: String) => fs.readFileSync(`./public/images/icons/${n
 // Some details about the site
 export const siteName = `Damn Fine Coffee!`;
 
+export const githubURL = 'https://github.com/matt123miller';
+
+export const twitterURL = 'https://twitter.com/matt123miller';
+
+export const linkedinURL = 'https://www.linkedin.com/in/matt123miller/';
+
+// export const 
+
 export const menu = [
     { slug: '/stores', title: 'Stores', icon: 'store', },
     { slug: '/tags', title: 'Tags', icon: 'tag', },
