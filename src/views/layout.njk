@@ -18,56 +18,23 @@
 
     <body class="bg-white antialiased">
 
-        {# {% block header %}
+        {% block header %}
             {% include "partials/header.njk" %}
-        {% endblock %} #}
+        {% endblock %}
 
         {% block sidebar %}
             {% include "partials/nav.njk" %}
         {% endblock %}
 
-
-        {# {% block content %}
-            Nothing to say right now, please come back later!
-        {% endblock %} #}
-
-        {# <div class="w-full max-w-screen-xl mx-auto px-6">
-            <div class="lg:flex -mx-6">
-
-                <div id="sidebar" class="hidden absolute z-90 top-16 bg-white w-full border-b -mb-16 lg:-mb-0 lg:fixed lg:bg-transparent lg:border-b-0 lg:pt-0 lg:w-1/4 lg:block lg:border-0 xl:w-1/5">
-                    <div class="lg:block lg:relative lg:fixed lg:top-16">
-                        <nav id="nav" class="px-6 pt-6 overflow-y-auto text-base lg:text-sm lg:py-12 lg:pl-6 lg:pr-8 sticky?lg:h-(screen-16)">
-
-
-                        </nav>
-                    </div>
-                </div>
-
-                <div id="content-wrapper" class="min-h-screen sm:px-5 md:px-10 lg:px-16 lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 xl:w-4/5">
-
-                    <div id="content">
-
-                        <div id="app" class="flex">
-                            <div class="pt-24 pb-8 lg:pt-28 w-full">
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-        </div> #}
+        <div id="content-wrapper" class="min-h-screen w-full  lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right">
+            {% block content %}
+                Nothing to say right now, please come back later!
+            {% endblock %}
+        </div>
 
         {% block footer %}
             {% include "partials/footer.njk" %}
         {% endblock %}
 
     </body>
-
-    {# Move to the intro page #}
-    <script src="scripts/movingText.js"></script>
-
 </html>

@@ -12,7 +12,7 @@
         "build": "npm run build:css && npm run build:ts",
         "build:css": "tailwind build src/public/css/styles.css -o src/public/css/output.css",
         "build:ts": "tsc",
-        "postbuild": "cp -r src/views dist/views && cp -r src/public/css dist/public/css",
+        "postbuild": "cp -r src/views dist/views && cp -r src/public/css dist/public/css && cp -r src/public/images dist/public/images",
         "serve:dev": "npm run build && npm run serve",
         "serve": "node dist/server.js",
         "debug": "tsc && node dist/server.js"

@@ -2,13 +2,15 @@
 
 {% extends "layout.njk" %}
 
-{% block content %}
-    {% include "partials/introduction.njk" %}
+{# <div id="content-wrapper" class="min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 xl:w-4/5 "> #}
 
-    {% include "partials/what-do-i-do.njk" %}
+    {% block content %}
+        {% include "partials/introduction.njk" %}
+        {% include "partials/introduction.njk" %}
+        {% include "partials/introduction.njk" %}
+        {% include "partials/introduction.njk" %}
+        {% include "partials/introduction.njk" %}
+    {% endblock %}
 
-    {% include "partials/skills.njk" %}
-
-{% endblock %}
-
-<script src="scripts/movingText.js"></script>
+    <script src="scripts/movingText.js"></script>
+{# </div> #}
