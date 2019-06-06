@@ -28,22 +28,19 @@
                             <a
                                 class="hover:underline text-grey-darkest"
                                 href="#"
-                                >post 1</a
-                            >
+                                >post 1</a>
                         </li>
                         <li class="mb-3 lg:mb-2">
                             <a
                                 class="hover:underline text-grey-darkest"
                                 href="#"
-                                >post 2</a
-                            >
+                                >post 2</a>
                         </li>
                         <li class="mb-3 lg:mb-2">
                             <a
                                 class="hover:underline text-grey-darkest"
                                 href="#"
-                                >post 3</a
-                            >
+                                >post 3</a>
                         </li>
                     </ul>
                 </div>

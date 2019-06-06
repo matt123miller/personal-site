@@ -3,9 +3,7 @@
         <h1 id="name_title" @load="attachCharactersEvent"
 v-text="{ msg }"
 >
-            <span>H</span><span>i</span><span>,</span> <span>I</span
-            ><span>'</span><span>m</span><span>&nbsp;</span><span>M</span
-            ><span>a</span><span>t</span><span>t</span>
+            <span>H</span><span>i</span><span>,</span> <span>I</span><span>'</span><span>m</span><span>&nbsp;</span><span>M</span><span>a</span><span>t</span><span>t</span>
         </h1>
         <h2>
             I'm a Developer.

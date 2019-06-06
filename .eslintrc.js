@@ -19,10 +19,10 @@ module.exports = {
         "use": true
     },
     "rules": {
-        // "indent": [
-        //     "error",
-        //     4
-        // ],
+        "indent": [
+            "error",
+            4
+        ],
         "linebreak-style": [
             "error",
             "unix"
