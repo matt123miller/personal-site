@@ -123,11 +123,6 @@ main {
   width: 80%;
 }
 
-footer {
-  background-color: var(--dark-accent);
-  background-image: linear-gradient(var(--dark-accent), var(--light-shades));
-  /* #303F9F */
-}
 
 p {
   line-height: 35px;
