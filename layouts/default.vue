@@ -1,10 +1,10 @@
 <template>
-    <div id="nuxttoplevel">
-        <Header />
-        <Nav />
-        <nuxt />
-        <Footer />
-    </div>
+  <div id="nuxttoplevel">
+    <Header/>
+    <Nav/>
+    <nuxt/>
+    <Footer/>
+  </div>
 </template>
 
 <script>

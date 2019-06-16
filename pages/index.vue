@@ -1,28 +1,17 @@
 <template>
-    <section class="container">
-        <div
-            class="min-h-screen w-full lg:static lg:max-h-full 
-      lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
-        >
-            <logo />
-            <h1 class="title">
-                nuxt-test
-            </h1>
-            <h2 class="subtitle" />
-            <div class="links">
-                <a
-                    href="https://nuxtjs.org/"
-                    target="_blank"
-                    class="button--green"
-                    >Documentation</a>
-                <a
-                    href="https://github.com/nuxt/nuxt.js"
-                    target="_blank"
-                    class="button--grey"
-                    >GitHub</a>
-            </div>
-        </div>
-    </section>
+  <section class="container">
+    <div
+      class="min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
+    >
+      <logo/>
+      <h1 class="title">nuxt-test</h1>
+      <h2 class="subtitle"/>
+      <div class="links">
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
+        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
