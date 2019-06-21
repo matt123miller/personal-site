@@ -10,10 +10,10 @@
       id="navWrapper"
       class="mt-16 lg:block lg:relative lg:sticky lg:top-16 bg-white lg:bg-transparent overflow-hidden"
     >
-      <nav class="site-nav float-left">
-        <div class="image-cropper">
+      <nav class="site-nav float-left w-full">
+        <div class="image-cropper mt-5">
           <img
-            class="rounded-full w-64 h-64"
+            class="rounded-full w-64 h-64 centred block"
             src="~/assets/images/selfie-cropped.png"
             alt="A picture of myself"
           >
@@ -51,11 +51,5 @@ export default {
 .image-cropper {
   position: relative;
   overflow: hidden;
-}
-img {
-  display: inline;
-  margin: 0 auto;
-  /* height: 100%;
-  width: auto; */
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <section class="intro centred">
-    <h1 id="name_title" @load="attachCharactersEvent" v-text="{ msg }">
+  <section class="intro block">
+    <h1 id="name_title" @load="attachCharactersEvent">
       <span>H</span>
       <span>i</span>
       <span>,</span>
