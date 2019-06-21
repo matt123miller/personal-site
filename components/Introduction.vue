@@ -24,34 +24,34 @@
  * @param {Event} event
  */
 function attachCharactersEvent(event) {
-    // wtf is going on here vue?!?!
-    // console.log(event);
-    event.target.childNodes.forEach(character => {
-        character.addEventListener('pointerenter', toggleCharacters);
-    });
+  // wtf is going on here vue?!?!
+  // console.log(event);
+  event.target.childNodes.forEach(character => {
+    // character.addEventListener("pointerenter", toggleCharacters);
+  });
 }
 
 const toggleCharacters = evt => (evt.target.style.color = getRandomColor());
 
 function getRandomColor() {
-    const characters = '0123456789ABCDEF';
-    // could use array.reduce if I was feeling fancy.
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += characters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+  const characters = "0123456789ABCDEF";
+  // could use array.reduce if I was feeling fancy.
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += characters[Math.floor(Math.random() * 16)];
+  }
+  return color;
 }
-const msg = '';
+const msg = "";
 export default {
-    name: 'Introduction',
-    data() {
-        return {
-            msg,
-        };
-    },
-    methods: {
-        attachCharactersEvent,
-    },
+  name: "Introduction",
+  data() {
+    return {
+      msg
+    };
+  },
+  methods: {
+    attachCharactersEvent
+  }
 };
 </script>

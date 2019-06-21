@@ -24,7 +24,6 @@
 
           <ul class="list-none">
             Recent posts header here
-            List/loop some recent blog posts
             <li class="mb-3 lg:mb-2">
               <a class="hover:underline text-grey-darkest" href="#">post 1</a>
             </li>
