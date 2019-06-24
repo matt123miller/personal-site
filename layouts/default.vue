@@ -2,12 +2,13 @@
   <div id="nuxttoplevel">
     <Header/>
     <Nav/>
-
-    <section
+    <div
       class="mt-32 min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
     >
-      <nuxt/>
-    </section>
+      <div class="container flex-col">
+        <nuxt/>
+      </div>
+    </div>
     <Footer/>
   </div>
 </template>
