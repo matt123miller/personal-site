@@ -1,15 +1,16 @@
 <template>
-  <section class="container">
+  <div>
     <Introduction/>
-  </section>
+    <SocialLinks/>
+  </div>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
 import Introduction from "~/components/Introduction.vue";
+import SocialLinks from "~/components/SocialLinks.vue";
 
 export default {
-  components: { Introduction }
+  components: { Introduction, SocialLinks }
 };
 </script>
 
@@ -44,9 +45,5 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

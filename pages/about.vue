@@ -8,16 +8,16 @@
       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
-    <div class="links">
-      <a href="https://twitter.com/matt123miller" target="_blank" class="button--green">Twitter</a>
-      <a href="https://github.com/matt123miller" target="_blank" class="button--grey">GitHub</a>
-    </div>
+    <SocialLinks/>
   </div>
 </template>
 
 <script>
+import SocialLinks from "~/components/SocialLinks.vue";
 export default {
   name: "about",
-  components: {}
+  components: {
+    SocialLinks
+  }
 };
 </script>

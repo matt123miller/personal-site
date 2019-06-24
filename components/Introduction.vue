@@ -1,5 +1,5 @@
 <template>
-  <section class="intro block">
+  <div>
     <h1 id="name_title" @load="attachCharactersEvent">
       <span>H</span>
       <span>i</span>
@@ -16,7 +16,7 @@
     <h2>I'm a Developer.</h2>
     <h2>Also a Dungeon Master.</h2>
     <h2>I'm currently working on my site, I'm sure you're gonna love it!</h2>
-  </section>
+  </div>
 </template>
 
 <script>
