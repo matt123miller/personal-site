@@ -1,15 +1,17 @@
 <template>
   <div id="nuxttoplevel">
-    <Header/>
-    <Nav/>
+    <div>
+      <Header/>
+      <Nav/>
+    </div>
     <div
       class="mt-32 min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
     >
       <div class="container flex-col">
         <nuxt/>
       </div>
+      <Footer/>
     </div>
-    <Footer/>
   </div>
 </template>
 
