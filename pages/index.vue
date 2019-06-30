@@ -1,29 +1,16 @@
 <template>
-  <section class="container">
-    <div
-      class="mt-32 min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
-    >
-      <h1 class="title">Lorem ipsum dolor sit amet</h1>
-      <h2 class="subtitle">consectetur adipiscing elit</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <div class="links">
-        <a href="https://twitter.com/matt123miller" target="_blank" class="button--green">Twitter</a>
-        <a href="https://github.com/matt123miller" target="_blank" class="button--grey">GitHub</a>
-      </div>
-    </div>
-  </section>
+  <div>
+    <Introduction/>
+    <SocialLinks/>
+  </div>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+import Introduction from "~/components/Introduction.vue";
+import SocialLinks from "~/components/SocialLinks.vue";
 
 export default {
-  components: {}
+  components: { Introduction, SocialLinks }
 };
 </script>
 
@@ -58,9 +45,5 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
