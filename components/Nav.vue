@@ -4,8 +4,9 @@
 
   <div
     id="sidebar"
-    class="absolute z-90 top-16 w-full h-full border-b -mb-16 lg:-mb-0 lg:border-b-0 lg:pt-0 lg:w-1/4 lg:block lg:border-0 xl:w-1/5"
+    class="absolute z-90 top-16 w-full h-full border-b -mb-16 hidden lg:block lg:-mb-0 lg:border-b-0 lg:pt-0 lg:w-1/4 lg:border-0 xl:w-1/5"
   >
+    <!-- Why use a nav wrapper? I could just put these classes on the nav really.... -->
     <div
       id="navWrapper"
       class="mt-16 lg:block lg:relative lg:sticky lg:top-16 bg-white lg:bg-transparent overflow-hidden"
