@@ -24,7 +24,7 @@
             </svg>
           </div>
 
-          <div id="sidebar-close" class="hidden flex px-6 items-center lg:hidden">
+          <div id="sidebar-close" class="px-6 items-center hidden">
             <svg
               class="fill-current w-4 h-4 cursor-pointer text-grey"
               role="button"
