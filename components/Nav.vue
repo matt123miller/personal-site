@@ -17,7 +17,7 @@
             class="rounded-full w-64 h-64 centred block"
             src="~/assets/images/selfie-cropped.png"
             alt="A picture of myself"
-          >
+          />
         </div>
 
         <div v-bind:key="i" v-for="i in 6" class="mb-8 ml-8 mt-8">
@@ -42,8 +42,17 @@
 </template>
 
 <script>
+import { EventBus, Events } from "./EventBus";
+
+EventBus.$on(Events.TOGGLE_NAV, data => console.log(data));
+
 export default {
-  name: "Nav"
+  name: "Nav",
+  data() {
+    return {
+      isHidden: "no"
+    };
+  }
 };
 </script>
 
