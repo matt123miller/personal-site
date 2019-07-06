@@ -44,7 +44,17 @@
 <script>
 import { EventBus, Events } from "./EventBus";
 
-EventBus.$on(Events.TOGGLE_NAV, data => console.log(data));
+EventBus.$on(Events.TOGGLE_NAV, data => showing the sidebar...);
+
+visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
+
+function a() {
+    console.log("hello");
+  document.getElementById("sidebar-open").classList.toggle("hidden");
+  document.getElementById("sidebar").classList.toggle("hidden");
+  document.getElementById("sidebar-close").classList.toggle("hidden");
+  document.getElementById("content-container").classList.toggle("overflow-hidden max-h-screen fixed");
+}
 
 export default {
   name: "Nav",
