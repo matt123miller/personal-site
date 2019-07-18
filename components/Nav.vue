@@ -4,8 +4,9 @@
 
   <div
     id="sidebar"
-    class="absolute z-90 top-16 w-full h-full border-b -mb-16 lg:-mb-0 lg:border-b-0 lg:pt-0 lg:w-1/4 lg:block lg:border-0 xl:w-1/5"
+    class="absolute z-90 top-16 w-full h-full border-b -mb-16 hidden lg:block lg:-mb-0 lg:border-b-0 lg:pt-0 lg:w-1/4 lg:border-0 xl:w-1/5"
   >
+    <!-- Why use a nav wrapper? I could just put these classes on the nav really.... -->
     <div
       id="navWrapper"
       class="mt-16 lg:block lg:relative lg:sticky lg:top-16 bg-white lg:bg-transparent overflow-hidden"
@@ -16,7 +17,7 @@
             class="rounded-full w-64 h-64 centred block"
             src="~/assets/images/selfie-cropped.png"
             alt="A picture of myself"
-          >
+          />
         </div>
 
         <div v-bind:key="i" v-for="i in 6" class="mb-8 ml-8 mt-8">
@@ -41,8 +42,27 @@
 </template>
 
 <script>
+import { EventBus, Events } from "./EventBus";
+
+EventBus.$on(Events.TOGGLE_NAV, data => showing the sidebar...);
+
+visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
+
+function a() {
+    console.log("hello");
+  document.getElementById("sidebar-open").classList.toggle("hidden");
+  document.getElementById("sidebar").classList.toggle("hidden");
+  document.getElementById("sidebar-close").classList.toggle("hidden");
+  document.getElementById("content-container").classList.toggle("overflow-hidden max-h-screen fixed");
+}
+
 export default {
-  name: "Nav"
+  name: "Nav",
+  data() {
+    return {
+      isHidden: "no"
+    };
+  }
 };
 </script>
 
