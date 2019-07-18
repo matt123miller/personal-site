@@ -20,12 +20,12 @@
           />
         </div>
 
-        <div v-bind:key="i" v-for="i in 6" class="mb-8 ml-8 mt-8">
+        <div class="mb-8 ml-8 mt-8">
           <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
 
           <ul class="list-none">
-            Recent posts header here
-            <li class="mb-3 lg:mb-2">
+            <li>It's coming...</li>
+            <!-- <li class="mb-3 lg:mb-2">
               <a class="hover:underline text-grey-darkest" href="#">post 1</a>
             </li>
             <li class="mb-3 lg:mb-2">
@@ -33,7 +33,7 @@
             </li>
             <li class="mb-3 lg:mb-2">
               <a class="hover:underline text-grey-darkest" href="#">post 3</a>
-            </li>
+            </li>-->
           </ul>
         </div>
       </nav>
@@ -44,16 +44,21 @@
 <script>
 import { EventBus, Events } from "./EventBus";
 
-EventBus.$on(Events.TOGGLE_NAV, data => showing the sidebar...);
+EventBus.$on(Events.TOGGLE_NAV, data => {
+  console.log({ data });
+});
 
-visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
+// visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
 
+// String contains invalid character error :(
 function a() {
-    console.log("hello");
+  console.log("hello");
   document.getElementById("sidebar-open").classList.toggle("hidden");
   document.getElementById("sidebar").classList.toggle("hidden");
   document.getElementById("sidebar-close").classList.toggle("hidden");
-  document.getElementById("content-container").classList.toggle("overflow-hidden max-h-screen fixed");
+  document
+    .getElementById("content-container")
+    .classList.toggle("overflow-hidden max-h-screen fixed");
 }
 
 export default {
