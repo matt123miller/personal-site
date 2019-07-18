@@ -1,30 +1,34 @@
 <template>
   <div id="nuxttoplevel">
     <div>
-      <Header/>
-      <Nav/>
+      <Header />
+      <Nav />
     </div>
     <div
       class="mt-32 min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
     >
-      <div class="container flex-col">
-        <nuxt/>
+      <div id="content-container" class="container flex-col">
+        <nuxt />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import Header from "~/components/Header.vue";
-import Nav from "~/components/Nav.vue";
-import Footer from "~/components/Footer.vue";
+import { EventBus, Events } from "../components/EventBus";
+import Header from "../components/Header.vue";
+import Nav from "../components/Nav.vue";
+import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     Header,
     Nav,
     Footer
+  },
+  data() {
+    return {};
   }
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="z-50 flex bg-white border-b border-grey-lighter fixed pin-t pin-x h-16 items-center">
     <div class="w-full max-w-screen-xl relative mx-auto px-6">
-      <div class="flex items-center -mx-6">
+      <div class="flex items-center mx-6">
         <div class="lg:w-1/4 xl:w-1/5 pl-6 pr-6 lg:pr-8">
           <div class="flex items-center"/>
         </div>
@@ -13,7 +13,7 @@
             </div>
           </div>
 
-          <div id="sidebar-open" class="flex px-6 items-center lg:hidden" @click="toggleNav">
+          <button @click="toggleNav" id="sidebar-open" class="flex px-6 items-center lg:hidden">
             <svg
               class="fill-current w-4 h-4 cursor-pointer text-grey"
               role="button"
@@ -22,7 +22,7 @@
             >
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
-          </div>
+          </button>
 
           <div id="sidebar-close" class="px-6 items-center hidden">
             <svg
@@ -60,15 +60,19 @@
 </template>
 
 <script>
-import TwitterLogo from "~/components/twitter/Logo.vue";
-import GithubLogo from "~/components/github/Logo.vue";
+import { Events, EventBus } from "./EventBus";
+import TwitterLogo from "./twitter/Logo.vue";
+import GithubLogo from "./github/Logo.vue";
+
 function toggleNav() {
-  console.log("123");
+  EventBus.$emit(`${Events.TOGGLE_SIDEBAR}`, "string message");
 }
+
 export default {
   components: { TwitterLogo, GithubLogo },
   methods: {
     toggleNav
-  }
+  },
+  mounted() {}
 };
 </script>
