@@ -27,6 +27,11 @@ export default {
     Nav,
     Footer
   },
+  head() {
+    return {
+      title: "Matt Miller"
+    };
+  },
   data() {
     return {};
   }
