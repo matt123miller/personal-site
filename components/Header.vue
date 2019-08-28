@@ -26,7 +26,7 @@
             </svg>
           </button>
 
-          <div id="sidebar-close" class="px-6 items-center hidden">
+          <div @click="toggleNav" id="sidebar-close" class="px-6 items-center hidden">
             <svg
               class="fill-current w-4 h-4 cursor-pointer text-grey"
               role="button"

@@ -1,17 +1,9 @@
 <template>
   <div>
     <h1 id="name_title" @load="attachCharactersEvent">
-      <span>H</span>
-      <span>i</span>
-      <span>,</span>
-      <span>I</span>
-      <span>'</span>
-      <span>m</span>
-      <span>&nbsp;</span>
-      <span>M</span>
-      <span>a</span>
-      <span>t</span>
-      <span>t</span>
+      <span>H</span><span>i</span><span>,</span>
+      <span>I</span><span>'</span><span>m</span>
+      <span>M</span><span>a</span><span>t</span><span>t</span>
     </h1>
     <h2>I'm a Developer.</h2>
     <h2>Also a Dungeon Master.</h2>

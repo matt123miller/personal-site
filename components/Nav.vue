@@ -46,19 +46,24 @@ import { EventBus, Events } from "./EventBus";
 
 EventBus.$on(Events.TOGGLE_NAV, data => {
   console.log({ data });
+  toggleNav();
 });
 
 // visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
 
 // String contains invalid character error :(
-function a() {
-  console.log("hello");
-  document.getElementById("sidebar-open").classList.toggle("hidden");
-  document.getElementById("sidebar").classList.toggle("hidden");
-  document.getElementById("sidebar-close").classList.toggle("hidden");
-  document
-    .getElementById("content-container")
-    .classList.toggle("overflow-hidden max-h-screen fixed");
+function toggleNav() {
+  const openButton = document.getElementById("sidebar-open");
+  const sidebar = document.getElementById("sidebar");
+  const closeButton = document.getElementById("sidebar-close");
+  const contentContainer = document.getElementById("content-container").parentElement;
+
+  openButton.classList.toggle('hidden');
+  openButton.classList.toggle('lg:hidden');
+  openButton.classList.toggle('flex');
+  sidebar.classList.toggle('hidden');
+  closeButton.classList.toggle('hidden');
+  contentContainer.classList.toggle('hidden');
 }
 
 export default {
