@@ -45,13 +45,11 @@
 import { EventBus, Events } from "./EventBus";
 
 EventBus.$on(Events.TOGGLE_NAV, data => {
-  console.log({ data });
   toggleNav();
 });
 
 // visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
 
-// String contains invalid character error :(
 function toggleNav() {
   const openButton = document.getElementById("sidebar-open");
   const sidebar = document.getElementById("sidebar");

@@ -67,7 +67,7 @@ import TwitterLogo from "./logos/Twitter.vue";
 import GithubLogo from "./logos/Github.vue";
 
 function toggleNav() {
-  EventBus.$emit(`${Events.TOGGLE_SIDEBAR}`, "string message");
+  EventBus.$emit(`${Events.TOGGLE_SIDEBAR}`, 'string message');
 }
 
 export default {
