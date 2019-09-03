@@ -5,7 +5,7 @@
       <Nav />
     </div>
     <div
-      class="mt-32 min-h-screen w-full lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pr-16 xl:w-4/5 float-right"
+      class="mt-32 min-h-screen w-full pl-12 pr-12 lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pl-16 lg:pr-16 xl:w-4/5 float-right"
     >
       <div id="content-container" class="container flex-col">
         <nuxt />
