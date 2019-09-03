@@ -17,10 +17,13 @@
  */
 function attachCharactersEvent(event) {
   // wtf is going on here vue?!?!
-  // console.log(event);
-  event.target.childNodes.forEach(character => {
-    // character.addEventListener("pointerenter", toggleCharacters);
-  });
+  console.log(event);
+  event.target.addEventListener('pointerenter', toggleCharacters);
+  
+}
+
+function helloworld(evt) {
+    console.log(evt)
 }
 
 const toggleCharacters = evt => (evt.target.style.color = getRandomColor());
@@ -34,7 +37,7 @@ function getRandomColor() {
   }
   return color;
 }
-const msg = "";
+let msg = "";
 export default {
   name: "Introduction",
   data() {
@@ -43,7 +46,8 @@ export default {
     };
   },
   methods: {
-    attachCharactersEvent
+    attachCharactersEvent,
+    helloworld
   }
 };
 </script>
