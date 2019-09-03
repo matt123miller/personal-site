@@ -1,14 +1,24 @@
 <template>
-  <div>
-    <h1 class="title">Lorem ipsum dolor sit amet</h1>
-    <h2 class="subtitle">consectetur adipiscing elit</h2>
+  <div class="mb-3 lg:mb-2">
+    <h1 class="title">Hi!</h1>
+    <h2 class="subtitle">My name is Matt</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      I've been a professional developer for 3 years now. I started with games and iOS development but I've been
+      focusing on web development for most of my career. Sort of full stack, but between you and me I prefer the backend.
     </p>
-    <SocialLinks/>
+    <p>
+      I want my website and blog to document my journey from graduate developer to wherever I end up. A lot of the
+      skills and knowledge I have now I picked up the hard way. I've been lucky to work with some brilliant
+      teams that have coached and moulded me, helping fill the gaps in my knowledge, and I want to pass some of that
+      onto others where I can.
+    </p>
+    <!-- <img src="" alt="An image of me working with my current team at SimpleClick" srcset=""> -->
+    <p>
+      Outside of work I paint, read and play Dungeons & Dragons. I run a D&D game every fortnight and play in another. 
+      Keep an eye on my blog for hobby content!
+    </p>
+    <img class="h-64 mt-3 object-cover" src="~/assets/images/dice-box.jpeg" alt="A rectangular wooden box containing 7 dice for Dungeons & Dragons" srcset="">
+    <SocialLinks />
   </div>
 </template>
 
