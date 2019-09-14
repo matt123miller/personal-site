@@ -13,27 +13,23 @@
     >
       <nav class="site-nav float-left w-full">
         <div class="image-cropper mt-5">
-          <img
-            class="rounded-full w-64 h-64 centred block"
-            src="~/assets/images/selfie-cropped.png"
-            alt="A picture of myself"
-          />
+          <a href="/">
+            <img
+              class="rounded-full w-64 h-64 centred block"
+              src="~/assets/images/selfie-cropped.png"
+              alt="A picture of myself"
+            />
+          </a>
         </div>
 
         <div class="mb-8 ml-8 mt-8">
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+            <a class="hover:underline text-grey-darkest" href="/about">About</a>
+          </p>
 
+          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
           <ul class="list-none">
             <li>It's coming...</li>
-            <!-- <li class="mb-3 lg:mb-2">
-              <a class="hover:underline text-grey-darkest" href="#">post 1</a>
-            </li>
-            <li class="mb-3 lg:mb-2">
-              <a class="hover:underline text-grey-darkest" href="#">post 2</a>
-            </li>
-            <li class="mb-3 lg:mb-2">
-              <a class="hover:underline text-grey-darkest" href="#">post 3</a>
-            </li>-->
           </ul>
         </div>
       </nav>
@@ -54,14 +50,15 @@ function toggleNav() {
   const openButton = document.getElementById("sidebar-open");
   const sidebar = document.getElementById("sidebar");
   const closeButton = document.getElementById("sidebar-close");
-  const contentContainer = document.getElementById("content-container").parentElement;
+  const contentContainer = document.getElementById("content-container")
+    .parentElement;
 
-  openButton.classList.toggle('hidden');
-  openButton.classList.toggle('lg:hidden');
-  openButton.classList.toggle('flex');
-  sidebar.classList.toggle('hidden');
-  closeButton.classList.toggle('hidden');
-  contentContainer.classList.toggle('hidden');
+  openButton.classList.toggle("hidden");
+  openButton.classList.toggle("lg:hidden");
+  openButton.classList.toggle("flex");
+  sidebar.classList.toggle("hidden");
+  closeButton.classList.toggle("hidden");
+  contentContainer.classList.toggle("hidden");
 }
 
 export default {
