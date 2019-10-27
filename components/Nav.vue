@@ -29,7 +29,10 @@
             <a class="hover:underline text-grey-darkest" href="/about">About</a>
           </p>
 
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              <a href="/blogs">Blogs</a>
+              
+              </p>
           <ul class="list-none">
             <li>It's coming...</li>
           </ul>
