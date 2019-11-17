@@ -133,6 +133,9 @@ export default {
     return {
       isHidden: "no" // wtf was I doing here?
     };
+  },
+  methods: {
+      toggleNav
   }
 };
 </script>
