@@ -105,10 +105,7 @@ EventBus.$on(Events.TOGGLE_NAV, data => {
   toggleNav();
 });
 
-// visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
-
-
-// The button tto trigger this is only viewable at certain sizes
+// The button to trigger this is only viewable at certain sizes
 // So I don't need to check state before executing.
 function toggleNav() {
   const openButton = document.getElementById("sidebar-open");
@@ -116,8 +113,6 @@ function toggleNav() {
   const closeButton = document.getElementById("sidebar-close");
   const contentContainer = document.getElementById("content-container")
     .parentElement;
-  console.log(contentContainer);
-  
 
   openButton.classList.toggle("hidden");
   openButton.classList.toggle("lg:hidden");

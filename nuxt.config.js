@@ -1,5 +1,9 @@
 import pkg from './package';
 
+// cannot find?
+
+import blogs from './content/blogs';
+
 export default {
     mode: 'universal',
 
@@ -71,4 +75,10 @@ export default {
             }
         },
     },
+
+    generate: {
+        routes: [
+            ...blogs.map(w => `/blog/${w}`)
+        ]
+    }
 };
