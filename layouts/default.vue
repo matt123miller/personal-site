@@ -21,6 +21,8 @@ import Header from "../components/Header.vue";
 import Nav from "../components/Nav.vue";
 import Footer from "../components/Footer.vue";
 
+import blogs from "../content/blogs/blogs.js";
+
 export default {
   components: {
     Header,
@@ -32,8 +34,17 @@ export default {
       title: "Matt Miller"
     };
   },
-  data() {
-    return {};
+  async asyncData({ app }) {
+    async function asyncImport(blogName) {
+      const wholeMD = await import(`~/content/blogs/${blogName}.md`);
+      return wholeMD.attributes;
+    }
+
+    return Promise.all(blogs.map(blog => asyncImport(blog))).then(res => {
+      return {
+        blogs: res
+      };
+    });
   }
 };
 </script>
