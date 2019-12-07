@@ -39,7 +39,7 @@ export default {
   },
   computed: {
     imageRequired() {
-      return require(`../assets/images/${this.imageURL}`);
+      return require(`../../assets/images/${this.imageURL}`);
     },
     isRounded() {
       return this.rounded ? "image-placeholder--rounded" : "";
