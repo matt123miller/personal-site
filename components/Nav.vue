@@ -11,88 +11,87 @@
       id="navWrapper"
       class="mt-16 lg:block lg:relative lg:sticky lg:top-16 bg-white lg:bg-transparent overflow-hidden"
     >
-      <nav class=" site-nav float-left w-full">
-          <div id="nav-content" class="overflow-y-scroll">
+      <nav class="site-nav float-left w-full">
+        <div id="nav-content" class="overflow-y-scroll">
+          <div class="image-cropper mt-5">
+            <a href="/">
+              <img
+                class="rounded-full w-64 h-64 centred block"
+                src="~/assets/images/selfie-cropped.png"
+                alt="A picture of myself"
+              />
+            </a>
+          </div>
 
-        <div class="image-cropper mt-5">
-          <a href="/">
-            <img
-              class="rounded-full w-64 h-64 centred block"
-              src="~/assets/images/selfie-cropped.png"
-              alt="A picture of myself"
-            />
-          </a>
-        </div>
+          <div class="mb-8 ml-8 mt-8">
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              <a class="hover:underline text-grey-darkest" href="/about">About</a>
+            </p>
 
-        <div class="mb-8 ml-8 mt-8">
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-            <a class="hover:underline text-grey-darkest" href="/about">About</a>
-          </p>
-
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
               <a href="/blogs">Blogs</a>
-              
-              </p>
-          <ul class="list-none">
-            <li>It's coming...</li>
-          </ul>
+            </p>
+            <ul class="list-none">
+              <li>It's coming...</li>
+            </ul>
+          </div>
+
+          <div class="mb-8 ml-8 mt-8">
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+            </p>
+
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <ul class="list-none">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
+            </ul>
+          </div>
+
+          <div class="mb-8 ml-8 mt-8">
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+            </p>
+
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <ul class="list-none">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
+            </ul>
+          </div>
+          <div class="mb-8 ml-8 mt-8">
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+            </p>
+
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <ul class="list-none">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
+            </ul>
+          </div>
+          <div class="mb-8 ml-8 mt-8">
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+            </p>
+
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <ul class="list-none">
+              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="mb-8 ml-8 mt-8">
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-            <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
-          </p>
-
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
-          <ul class="list-none">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-          </ul>
+        <div
+          class="z-50 flex bg-white border-t-2 border-grey-dark fixed pin-b pin-x h-8 items-center"
+        >
+          <button @click="toggleNav" id="sidebar-close" class="fixed lg:hidden close-arrow">
+            <svg
+              class="fill-current h-8 w-8"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+            </svg>
+          </button>
         </div>
-
-        <div class="mb-8 ml-8 mt-8">
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-            <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
-          </p>
-
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
-          <ul class="list-none">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-          </ul>
-        </div>
-        <div class="mb-8 ml-8 mt-8">
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-            <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
-          </p>
-
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
-          <ul class="list-none">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-          </ul>
-        </div>
-        <div class="mb-8 ml-8 mt-8">
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-            <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
-          </p>
-
-          <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
-          <ul class="list-none">
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-          </ul>
-        </div>
-
-          
-        </div> 
-        
-            <div class="z-50 flex bg-white border-t-2 border-grey-dark fixed pin-b pin-x h-8 items-center">
-
-
-         <button @click="toggleNav" id="sidebar-close" class="fixed lg:hidden close-arrow">
-                
-                <svg class="fill-current h-8 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
-            </button>
-            </div>
-        
-        
       </nav>
     </div>
   </div>
@@ -105,10 +104,7 @@ EventBus.$on(Events.TOGGLE_NAV, data => {
   toggleNav();
 });
 
-// visit this link https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
-
-
-// The button tto trigger this is only viewable at certain sizes
+// The button to trigger this is only viewable at certain sizes
 // So I don't need to check state before executing.
 function toggleNav() {
   const openButton = document.getElementById("sidebar-open");
@@ -116,8 +112,6 @@ function toggleNav() {
   const closeButton = document.getElementById("sidebar-close");
   const contentContainer = document.getElementById("content-container")
     .parentElement;
-  console.log(contentContainer);
-  
 
   openButton.classList.toggle("hidden");
   openButton.classList.toggle("lg:hidden");
@@ -135,7 +129,7 @@ export default {
     };
   },
   methods: {
-      toggleNav
+    toggleNav
   }
 };
 </script>
@@ -146,18 +140,20 @@ export default {
   overflow: hidden;
 }
 
-.close-arrow  {
-    margin-left: 50%;
-    margin-right: 50%;
-    transform:translate(-50%, 0%);
-    transform:rotate(180deg)
+.close-arrow {
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, 0%);
+  transform: rotate(180deg);
 }
 
-.close-arrow button path { 
-    stroke:#c00; stroke-width:0.5; fill:none;
+.close-arrow button path {
+  stroke: #c00;
+  stroke-width: 0.5;
+  fill: none;
 }
 
 #nav-content {
-    max-height: 75%
+  max-height: 75%;
 }
 </style>
