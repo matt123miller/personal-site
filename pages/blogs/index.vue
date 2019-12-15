@@ -24,32 +24,32 @@ import Preview from '~/components/blogs/Preview.vue'
 
 const recentBlogs = [
     {
-        url:'/blogs/1',
-        title: 'Hello World',
-        snippet: 'this is a preview of the post. Max 100 characters?',
+        url:'/blogs',
+        title: 'Example blog preview',
+        snippet: 'Currently I have no posts, but if I did the preview might look like this! ',
         image: {
             src: 'https://placeimg.com/480/480/tech', // url
             alt: 'a sample image'
         }
     },
-    {
-        url:'/blogs/2',
-        title: 'Hello World',
-        snippet: 'this is a preview of the post. Max 100 characters?',
-        image: {
-            src: 'https://placeimg.com/480/480/tech', // url
-            alt: 'a sample image'
-        }
-    },
-    {
-        url:'/blogs/3',
-        title: 'Hello World',
-        snippet: 'this is a preview of the post. Max 100 characters?',
-        image: {
-            src: 'https://placeimg.com/480/480/tech', // url
-            alt: 'a sample image'
-        }
-    },
+    // {
+    //     url:'/blogs/2',
+    //     title: 'Hello World',
+    //     snippet: 'this is a preview of the post. Max 100 characters?',
+    //     image: {
+    //         src: 'https://placeimg.com/480/480/tech', // url
+    //         alt: 'a sample image'
+    //     }
+    // },
+    // {
+    //     url:'/blogs/3',
+    //     title: 'Hello World',
+    //     snippet: 'this is a preview of the post. Max 100 characters?',
+    //     image: {
+    //         src: 'https://placeimg.com/480/480/tech', // url
+    //         alt: 'a sample image'
+    //     }
+    // },
 ];
 export default {
     name: 'blogs',
