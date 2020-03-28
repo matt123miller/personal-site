@@ -1,7 +1,11 @@
 <template>
   <div class="mb-3 lg:mb-2">
-    <h1 class="title">Hi!</h1>
-    <h2 class="subtitle">My name is Matt</h2>
+    <h1 class="title">
+      Hi!
+    </h1>
+    <h2 class="subtitle">
+      My name is Matt
+    </h2>
     <p>
       I've been a professional developer for 3 years now. I started with games and iOS development but I've been
       focusing on web development for most of my career. Sort of full stack, but between you and me I prefer the backend.
@@ -17,7 +21,12 @@
       Outside of work I paint, read and play Dungeons & Dragons. I run a D&D game every fortnight and play in another. 
       Keep an eye on my blog for hobby content!
     </p>
-    <img class="h-64 mt-3 object-cover" src="~/assets/images/dice-box.jpeg" alt="A rectangular wooden box containing 7 dice for Dungeons & Dragons" srcset="">
+    <img
+      class="h-64 mt-3 object-cover"
+      src="~/assets/images/dice-box.jpeg"
+      alt="A rectangular wooden box containing 7 dice for Dungeons & Dragons"
+      srcset=""
+    >
     <SocialLinks />
   </div>
 </template>
@@ -25,7 +34,7 @@
 <script>
 import SocialLinks from "~/components/SocialLinks.vue";
 export default {
-  name: "about",
+  name: "About",
   components: {
     SocialLinks
   }

@@ -7,7 +7,10 @@
     <div
       class="mt-32 min-h-screen w-full pl-12 pr-12 lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pl-16 lg:pr-16 xl:w-4/5 float-right"
     >
-      <div id="content-container" class="container flex-col">
+      <div
+        id="content-container"
+        class="container flex-col"
+      >
         <nuxt />
       </div>
       <Footer />
@@ -21,7 +24,7 @@ import Header from "../components/Header.vue";
 import Nav from "../components/Nav.vue";
 import Footer from "../components/Footer.vue";
 
-import blogs from "../content/blogs/blogs.js";
+// import blogs from "../content/blogs/blogs.js";
 
 export default {
   components: {
@@ -35,16 +38,16 @@ export default {
     };
   },
   async asyncData({ app }) {
-    async function asyncImport(blogName) {
-      const wholeMD = await import(`~/content/blogs/${blogName}.md`);
-      return wholeMD.attributes;
-    }
+    // async function asyncImport(blogName) {
+    //   const wholeMD = await import(`~/content/blogs/${blogName}.md`);
+    //   return wholeMD.attributes;
+    // }
 
-    return Promise.all(blogs.map(blog => asyncImport(blog))).then(res => {
-      return {
-        blogs: res
-      };
-    });
+    // return Promise.all(blogs.map(blog => asyncImport(blog))).then(res => {
+    //   return {
+    //     blogs: res
+    //   };
+    // });
   }
 };
 </script>

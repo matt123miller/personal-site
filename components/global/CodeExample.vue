@@ -2,7 +2,7 @@
   <div>
     <pre v-highlightjs>
         <code class="csharp">
-          {{snippet}}
+          {{ snippet }}
         </code>
     </pre>
   </div>

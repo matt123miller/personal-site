@@ -10,7 +10,7 @@
       :height="height"
       :class="classes"
       :alt="alt"
-    />
+    >
   </div>
 </template>
 

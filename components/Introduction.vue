@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1 id="name_title" @load="attachCharactersEvent">
+    <h1
+      id="name_title"
+      @load="attachCharactersEvent"
+    >
       <span>H</span><span>i</span><span>,</span>
       <span>I</span><span>'</span><span>m</span>
       <span>M</span><span>a</span><span>t</span><span>t</span>

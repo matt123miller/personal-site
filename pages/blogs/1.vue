@@ -5,7 +5,6 @@
     <div>I've previously written about my Witch's House project, which included a fun mechanic I created that let players rotate their phone to look around the game area. There's videos describing that in full can be found here along with the full code for that system. Between that and our moving camera system that Tish (https://twitter.com/tishgraham) wrote, we used a lot of lerping and slerp to move cameras around. A shorter snippet of this is shown below. You'll just have to use your intuition for the variables, hopefully they're clearly named!</div>
     <div>
       <!-- <VueEmbedGist gist-id="3a97d818f66aaafcbe09dabbe73ed1bb" file="PhoneRotation.cs"/> -->
-      
     </div>
     <div>Lerp performs Linear Interpolation, finding the value that is c% between a and b. In the code above I use Quaternion.Slerp(a,b,c), which is basically the same as the normal Mathf.lerp(a,b,c), except it performs spherical interpolation to find the rotation. The basic theory is the same though, c% between a and b. It seems like many developers are using lerp wrong though, which is understandable as the Unity documentation labels the method signature as Lerp(float a, float b, float t). Because lerp is often used in the context of an update loop where we often use Time.deltaTime it’s a sensible leap to equate the argument twith time. It’s very common to see code like this:</div>
 
@@ -26,7 +25,7 @@
 import VueEmbedGist from "vue-embed-gist-nojquery";
 
 export default {
-  name: "blog-1",
+  name: "Blog1",
   // components: { VueEmbedGist },
   data: function() {
     return {

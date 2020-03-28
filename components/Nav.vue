@@ -12,20 +12,26 @@
       class="mt-16 lg:block lg:relative lg:sticky lg:top-16 bg-white lg:bg-transparent overflow-hidden"
     >
       <nav class="site-nav float-left w-full">
-        <div id="nav-content" class="overflow-y-scroll">
+        <div
+          id="nav-content"
+          class="overflow-y-scroll"
+        >
           <div class="image-cropper mt-5">
             <a href="/">
               <img
                 class="rounded-full w-64 h-64 centred block"
                 src="~/assets/images/selfie-cropped.png"
                 alt="A picture of myself"
-              />
+              >
             </a>
           </div>
 
           <div class="mb-8 ml-8 mt-8">
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a class="hover:underline text-grey-darkest" href="/about">About</a>
+              <a
+                class="hover:underline text-grey-darkest"
+                href="/about"
+              >About</a>
             </p>
 
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
@@ -38,10 +44,15 @@
 
           <div class="mb-8 ml-8 mt-8">
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+              <a
+                class="hover:underline text-grey-darkest"
+                href="/about"
+              >Fake Link</a>
             </p>
 
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              Blog
+            </p>
             <ul class="list-none">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
             </ul>
@@ -49,30 +60,45 @@
 
           <div class="mb-8 ml-8 mt-8">
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+              <a
+                class="hover:underline text-grey-darkest"
+                href="/about"
+              >Fake Link</a>
             </p>
 
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              Blog
+            </p>
             <ul class="list-none">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
             </ul>
           </div>
           <div class="mb-8 ml-8 mt-8">
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+              <a
+                class="hover:underline text-grey-darkest"
+                href="/about"
+              >Fake Link</a>
             </p>
 
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              Blog
+            </p>
             <ul class="list-none">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
             </ul>
           </div>
           <div class="mb-8 ml-8 mt-8">
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a class="hover:underline text-grey-darkest" href="/about">Fake Link</a>
+              <a
+                class="hover:underline text-grey-darkest"
+                href="/about"
+              >Fake Link</a>
             </p>
 
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">Blog</p>
+            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+              Blog
+            </p>
             <ul class="list-none">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
             </ul>
@@ -82,7 +108,11 @@
         <div
           class="z-50 flex bg-white border-t-2 border-grey-dark fixed pin-b pin-x h-8 items-center"
         >
-          <button @click="toggleNav" id="sidebar-close" class="fixed lg:hidden close-arrow">
+          <button
+            id="sidebar-close"
+            class="fixed lg:hidden close-arrow"
+            @click="toggleNav"
+          >
             <svg
               class="fill-current h-8 w-8"
               xmlns="http://www.w3.org/2000/svg"

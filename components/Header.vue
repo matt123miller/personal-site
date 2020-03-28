@@ -15,7 +15,11 @@
             </div>
           </div>
 
-          <button @click="toggleNav" id="sidebar-open" class="flex px-6 items-center lg:hidden">
+          <button
+            id="sidebar-open"
+            class="flex px-6 items-center lg:hidden"
+            @click="toggleNav"
+          >
             <svg
               class="fill-current w-4 h-4 cursor-pointer text-grey"
               role="button"
@@ -26,7 +30,11 @@
             </svg>
           </button>
 
-          <div @click="toggleNav" id="sidebar-close" class="px-6 items-center hidden">
+          <div
+            id="sidebar-close"
+            class="px-6 items-center hidden"
+            @click="toggleNav"
+          >
             <svg
               class="fill-current w-4 h-4 cursor-pointer text-grey"
               role="button"
@@ -72,9 +80,9 @@ function toggleNav() {
 
 export default {
   components: { TwitterLogo, GithubLogo },
+  mounted() {},
   methods: {
     toggleNav
-  },
-  mounted() {}
+  }
 };
 </script>

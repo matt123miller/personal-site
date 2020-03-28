@@ -2,7 +2,7 @@ import path from 'path';
 import Mode from 'frontmatter-markdown-loader/mode';
 
 import pkg from './package';
-import blogs from './content/blogs/blogs.js';
+// import blogs from './content/blogs/blogs.js';
 
 const builtAt = new Date().toISOString();
 

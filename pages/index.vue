@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Introduction/>
-    <SocialLinks/>
+    <Introduction />
+    <SocialLinks />
   </div>
 </template>
 
