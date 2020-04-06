@@ -11,7 +11,12 @@
 <script>
 export default {
   name: "CodeExample",
-  props: ["snippet"],
+  props: {
+    snippet: {
+      type: String,
+      required: true,
+    }
+  },
   data() {
     return {};
   }
