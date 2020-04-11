@@ -46,6 +46,14 @@ export default {
       name: 'body',
       title: 'Body',
       type: 'blockContent'
+    },
+    {
+      name: 'snippet',
+      title: 'Snippet',
+      type: 'string',
+      options: {
+        maxLength: 300
+      }
     }
   ],
 

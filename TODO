@@ -1,5 +1,9 @@
 
 Todo:
-
+  ☐ Update Schema in sanity studio
+  ☐ Properly handle the previews with the new snippet field on blogs.
+    ☐ Only request minimum fields from API for those previews. Don't need body for example.
+  
+  
 Vuetify? : 
   ☐ https://vuetifyjs.com/en/components/avatars/
