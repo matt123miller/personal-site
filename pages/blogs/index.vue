@@ -3,10 +3,11 @@
     <h1 class="mb-8">
       Blogs
     </h1>
-    <p class="big mb-4">
+    <p
+      class="big mb-4"
+    >
       Here and there I write an article about tech and my hobbies. I want to focus on programming topics I think will be useful for other developers, especially juniors.
     </p>
-
     <Preview
       v-for="(item, index) in recentBlogs"
       :key="index"
@@ -20,47 +21,67 @@
 </template>
 
 <script>
+import Preview from "~/components/blogs/Preview.vue";
+import sanityClient from "@sanity/client";
+import blocksToHtml from "@sanity/block-content-to-html";
 
-import Preview from '~/components/blogs/Preview.vue'
+const client = sanityClient({
+  projectId: "14mnylm0",
+  dataset: "blog-content",
+  useCdn: false
+});
 
-const recentBlogs = [
-    {
-        url:'/blogs',
-        title: 'Example blog preview',
-        snippet: 'Currently I have no posts, but if I did the preview might look like this! ',
-        image: {
-            src: 'https://placeimg.com/480/480/tech', // url
-            alt: 'a sample image'
-        }
-    },
-    // {
-    //     url:'/blogs/2',
-    //     title: 'Hello World',
-    //     snippet: 'this is a preview of the post. Max 100 characters?',
-    //     image: {
-    //         src: 'https://placeimg.com/480/480/tech', // url
-    //         alt: 'a sample image'
-    //     }
-    // },
-    // {
-    //     url:'/blogs/3',
-    //     title: 'Hello World',
-    //     snippet: 'this is a preview of the post. Max 100 characters?',
-    //     image: {
-    //         src: 'https://placeimg.com/480/480/tech', // url
-    //         alt: 'a sample image'
-    //     }
-    // },
-];
+// Create a general purpose one? 
+// OR is this only used in the blog page?
+// const h = blocksToHtml.h;
+
+// const serializers = {
+//   types: {
+//     code: props =>
+//       h("pre", { className: props.node.language }, h("code", props.node.code))
+//   }
+// };
+
+// const el = blocksToHtml({
+//         blocks: res.body,
+//         serializers: serializers,
+//         projectId: "14mnylm0",
+//         dataset: "blog-content"
+//       });
+
 export default {
-    name: 'Blogs',
-    components : { Preview },
-    data() {
-        return {
-            recentBlogs
+  name: "Blogs",
+  components: { Preview },
+  async asyncData({ req }) {
+    try {
+
+      const query = "*[_type == 'post']";
+      const params = {}; // provide some sort of limit?
+      const posts = await client.fetch(query, params);
+
+      const recentBlogs = posts.map(p => {
+        return { 
+          title: p.title,
+          url: '/blog/' + p.slug.current,
+          title: p.title,
+          snippet: p.snippet,
+          image: {
+            src: undefined,
+            alt: undefined
+          }
+          //come back to image later. Do I need any parsing? Or a top level image?
+          // How do i know the url?
         }
+      })
+
+      return {
+        recentBlogs
+      };
+    } catch (error) {
+      console.log(error);
     }
-}
+  }
+};
 </script>
 
 <style>
