@@ -5,10 +5,16 @@ Todo:
     ☐ Only request minimum fields from API for those previews. Don't need body for example.
   ✔ Create a shared api client for sanity accessing blogs @done(20-04-13 12:36)
     ✔ get all @started(20-04-13 12:39) @done(20-04-13 12:39) @lasted(1m)
-    ☐ get specific
+    ✔ get specific @done(20-04-13 22:29)
     ☐ get recent
-    ☐ expose a default client
+    ✔ expose a default client @done(20-04-13 21:48)
     ☐ put project id in an env file
+    ✔ An image builder @done(20-04-13 22:29)
   
+  ☐ Blog images CSS
+    ☐  Preview sizes
+    ☐  Blog post sizes
+    ☐ Responsive
+    
 Vuetify? : 
   ☐ https://vuetifyjs.com/en/components/avatars/

@@ -4,11 +4,11 @@
       Blogs
     </h1>
     <p
-      class="mb-4"
+      class="text-loud mb-4"
     >
       Here and there I write an article about tech and my hobbies. I want to focus on programming topics I think will be useful for other developers, especially juniors.
     </p>
-    <p class="mb-4">
+    <p class="text-loud mb-4">
       You can expect to see posts about what I do behind the keyboard and away from it. This includes 
       JavaScript, C#, miniature painting, Dungeons & Dragons and whatever else I want to write about.
     </p>
@@ -26,7 +26,7 @@
 
 <script>
 import Preview from "./Preview";
-import { getAllPosts } from "./APIClient";
+import { getAllPosts, imageFromSource } from "./APIClient";
 
 
 export default {
@@ -38,13 +38,16 @@ export default {
       const posts = await getAllPosts();
 
       const recentBlogs = posts.map(p => {
+
+        const image = imageFromSource(p.mainImage);
+        
         return { 
           title: p.title,
           url: '/blog/' + p.slug.current,
           title: p.title,
           snippet: p.snippet,
           image: {
-            src: undefined,
+            src: image.width(200).height(200).url(),
             alt: undefined
           }
           //come back to image later. Do I need any parsing? Or a top level image?

@@ -159,9 +159,19 @@ h3 {
   margin-right: auto;
 }
 
-.big {
+.text-shout {
     font-size: 2rem;
     line-height: 1.2em;
+}
+
+.text-loud {
+      font-size: 1.5rem;
+    /* line-height: 1.2em; */
+}
+
+.text-quiet {
+    font-size: 0.7rem;
+    /* line-height: 1.2em; */
 }
 
 .card {

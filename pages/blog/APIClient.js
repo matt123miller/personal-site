@@ -1,5 +1,6 @@
 import sanityClient from "@sanity/client";
 import blocksToHtml from "@sanity/block-content-to-html";
+import imageUrlBuilder from '@sanity/image-url'
 
 const dataset = 'blog-content';
 const projectId = '14mnylm0'
@@ -10,7 +11,7 @@ const client = sanityClient({
   useCdn: false
 });
 
-
+const builder = imageUrlBuilder(client);
 
 const serializers = {
   types: {
@@ -35,8 +36,21 @@ export {
   getPostWithSlug,
   getLatestPost,
   transformContentToHtml,
+  imageFromSource,
   serializers as defaultSerialiser
 }
+
+
+/**
+ * 
+ * @param {SanityImageSource} source A sanity image source matching the format defined in https://www.sanity.io/docs/image-type
+ */
+function imageFromSource(source) {
+  return builder.image(source);
+}
+
+// Also have a direct to image url function?
+// It just appends .url() on the end but means I don't have to think about it
 
 
 /** @typedef Post
@@ -96,8 +110,8 @@ async function getLatestPost() {
  */
 async function getPostWithSlug(slug) {
 
-  const query = `*[_type == 'post' && slug.current == '${slug}']`;
-  const params = {};
+  const query = `*[slug.current == '${slug}'][0]`;
+  const params = {  };
   const post = await client.fetch(query, params);
   
   return post;
