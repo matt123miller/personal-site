@@ -1,17 +1,26 @@
 <template>
-  <div>hello world?</div>
+  <div v-html="content">
+  </div>
 </template>
 
 <script>
+
+import { getPostWithId } from "./APIClient";
+
 export default {
   data () {
     return {
       story: { content: { body: '' } }
     }
   },
-  async asyncData() {
-    // get the full blog page and all that
-    return {}
+
+ async asyncData ({ params, error }) {
+    try {
+      const content = await getPostWithId(params.slug);
+      return { content };
+    } catch (e) {
+      error({ message: 'Post not found', statusCode: 404 })
+    }
   }
 }
 </script>

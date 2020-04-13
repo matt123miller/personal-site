@@ -1,9 +1,14 @@
 
 Todo:
-  ☐ Update Schema in sanity studio
-  ☐ Properly handle the previews with the new snippet field on blogs.
+  ✔ Update Schema in sanity studio @done(20-04-13 12:35)
+  ✔ Properly handle the previews with the new snippet field on blogs. @done(20-04-13 12:35)
     ☐ Only request minimum fields from API for those previews. Don't need body for example.
-  
+  ✔ Create a shared api client for sanity accessing blogs @done(20-04-13 12:36)
+    ✔ get all @started(20-04-13 12:39) @done(20-04-13 12:39) @lasted(1m)
+    ☐ get specific
+    ☐ get recent
+    ☐ expose a default client
+    ☐ put project id in an env file
   
 Vuetify? : 
   ☐ https://vuetifyjs.com/en/components/avatars/

@@ -35,14 +35,14 @@
             </p>
 
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a href="/blogs">Blogs</a>
+              <a href="/blog">Blog</a>
             </p>
             <ul class="list-none">
               <li>It's coming...</li>
             </ul>
           </div>
 
-          <div class="mb-8 ml-8 mt-8">
+          <!-- <div class="mb-8 ml-8 mt-8">
             <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
               <a
                 class="hover:underline text-grey-darkest"
@@ -56,53 +56,7 @@
             <ul class="list-none">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
             </ul>
-          </div>
-
-          <div class="mb-8 ml-8 mt-8">
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a
-                class="hover:underline text-grey-darkest"
-                href="/about"
-              >Fake Link</a>
-            </p>
-
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              Blog
-            </p>
-            <ul class="list-none">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-            </ul>
-          </div>
-          <div class="mb-8 ml-8 mt-8">
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a
-                class="hover:underline text-grey-darkest"
-                href="/about"
-              >Fake Link</a>
-            </p>
-
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              Blog
-            </p>
-            <ul class="list-none">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-            </ul>
-          </div>
-          <div class="mb-8 ml-8 mt-8">
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a
-                class="hover:underline text-grey-darkest"
-                href="/about"
-              >Fake Link</a>
-            </p>
-
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              Blog
-            </p>
-            <ul class="list-none">
-              <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
-            </ul>
-          </div>
+          </div> -->
         </div>
 
         <div

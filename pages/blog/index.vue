@@ -8,6 +8,10 @@
     >
       Here and there I write an article about tech and my hobbies. I want to focus on programming topics I think will be useful for other developers, especially juniors.
     </p>
+    <p class="big mb-4">
+      You can expect to see posts about what I do behind the keyboard and away from it. This includes 
+      JavaScript, C#, miniature painting, Dungeons & Dragons and whatever else I want to write about.
+    </p>
     <Preview
       v-for="(item, index) in recentBlogs"
       :key="index"
@@ -22,14 +26,7 @@
 
 <script>
 import Preview from "./Preview";
-import sanityClient from "@sanity/client";
-import blocksToHtml from "@sanity/block-content-to-html";
-
-const client = sanityClient({
-  projectId: "14mnylm0",
-  dataset: "blog-content",
-  useCdn: false
-});
+import { getAllPosts } from "./APIClient";
 
 
 export default {
@@ -38,9 +35,7 @@ export default {
   async asyncData({ req }) {
     try {
 
-      const query = "*[_type == 'post']";
-      const params = {}; // provide some sort of limit?
-      const posts = await client.fetch(query, params);
+      const posts = await getAllPosts();
 
       const recentBlogs = posts.map(p => {
         return { 
