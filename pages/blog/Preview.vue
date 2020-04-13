@@ -15,6 +15,10 @@
         :alt="alt"
       >
     </a>
+
+    <nuxt-link :to="url" >
+      {{ title }}
+    </nuxt-link>
   </div>
 </template>
 <script>
