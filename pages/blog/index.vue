@@ -4,11 +4,11 @@
       Blogs
     </h1>
     <p
-      class="big mb-4"
+      class="mb-4"
     >
       Here and there I write an article about tech and my hobbies. I want to focus on programming topics I think will be useful for other developers, especially juniors.
     </p>
-    <p class="big mb-4">
+    <p class="mb-4">
       You can expect to see posts about what I do behind the keyboard and away from it. This includes 
       JavaScript, C#, miniature painting, Dungeons & Dragons and whatever else I want to write about.
     </p>

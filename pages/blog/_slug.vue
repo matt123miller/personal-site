@@ -1,11 +1,11 @@
 <template>
-  <div v-html="content">
+  <div v-html="postHTML">
   </div>
 </template>
 
 <script>
 
-import { getPostWithId } from "./APIClient";
+import { getPostWithSlug, transformContentToHtml } from "./APIClient";
 
 export default {
   data () {
@@ -16,8 +16,10 @@ export default {
 
  async asyncData ({ params, error }) {
     try {
-      const content = await getPostWithId(params.slug);
-      return { content };
+      const post = await getPostWithSlug(params.slug);
+      const postHTML = transformContentToHtml(post.body);
+
+      return { postHTML };
     } catch (e) {
       error({ message: 'Post not found', statusCode: 404 })
     }
