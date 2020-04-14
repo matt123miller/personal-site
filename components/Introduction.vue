@@ -8,6 +8,11 @@
       <span>I</span><span>'</span><span>m</span>
       <span>M</span><span>a</span><span>t</span><span>t</span>
     </h1>
+    <img
+      src="/_nuxt/assets/images/selfie-cropped.png"
+      class="centred block rounded-full lg:hidden w-64 h-64 mb-4 mt-4"
+      alt="A picture of myself"
+    >
     <h2>I'm a Developer.</h2>
     <h2>Also a Dungeon Master.</h2>
     <h2>I'm currently working on my site, I'm sure you're gonna love it!</h2>

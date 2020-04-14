@@ -12,33 +12,27 @@
       class="mt-16 lg:block lg:relative lg:sticky lg:top-16 bg-white lg:bg-transparent overflow-hidden"
     >
       <nav class="site-nav float-left w-full">
-        <div
-          id="nav-content"
-          class="overflow-y-scroll"
-        >
+        <div id="nav-content" class="overflow-y-scroll">
           <div class="image-cropper mt-5">
             <a href="/">
               <img
                 class="rounded-full w-64 h-64 centred block"
                 src="~/assets/images/selfie-cropped.png"
                 alt="A picture of myself"
-              >
+              />
             </a>
           </div>
 
           <div class="mb-8 ml-8 mt-8">
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
-              <a
-                class="hover:underline text-grey-darkest"
-                href="/about"
-              >About</a>
-            </p>
+            <h3 class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-base lg:text-lg">
+              <a class="hover:underline text-grey-darkest" href="/about">About</a>
+            </h3>
 
-            <p class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-sm lg:text-xs">
+            <h3 class="mb-3 lg:mb-2 uppercase tracking-wide font-bold text-base lg:text-lg">
               <a href="/blog">Blog</a>
-            </p>
+            </h3>
             <ul class="list-none">
-              <li>It's coming...</li>
+              <li>Must update with blog links</li>
             </ul>
           </div>
 
@@ -56,17 +50,13 @@
             <ul class="list-none">
               <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, itaque illo! Nihil inventore magnam dolorem aliquam quam, asperiores dicta porro magni natus. Cupiditate mollitia repudiandae minima saepe hic, beatae commodi.</li>
             </ul>
-          </div> -->
+          </div>-->
         </div>
 
         <div
-          class="z-50 flex bg-white border-t-2 border-grey-dark fixed pin-b pin-x h-8 items-center"
+          class="z-50 flex bg-white border-t-2 border-grey-dark fixed pin-b pin-x h-8 items-center lg:hidden"
         >
-          <button
-            id="sidebar-close"
-            class="fixed lg:hidden close-arrow"
-            @click="toggleNav"
-          >
+          <button id="sidebar-close" class="fixed lg:hidden close-arrow" @click="toggleNav">
             <svg
               class="fill-current h-8 w-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +84,7 @@ function toggleNav() {
   const openButton = document.getElementById("sidebar-open");
   const sidebar = document.getElementById("sidebar");
   const closeButton = document.getElementById("sidebar-close");
-  const contentContainer = document.getElementById("content-container")
-    .parentElement;
+  const contentContainer = document.getElementById("content-container").parentElement;
 
   openButton.classList.toggle("hidden");
   openButton.classList.toggle("lg:hidden");

@@ -80,6 +80,8 @@ We could declare variables with a smaller scope, but they could only be used wit
     --dark-shades-highlight: #dc3634;
     --success: #6a9450;
     --warning: #e88418;
+    --twitter-blue: #1da1f2;
+    --github-charcoal: #2b3137;
 }
 .text-white {
     color: var(--light-shades);
@@ -154,7 +156,6 @@ h3 {
 
 
 .centred {
-  
   margin-left: auto;
   margin-right: auto;
 }

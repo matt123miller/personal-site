@@ -3,12 +3,12 @@
     <a
       href="https://twitter.com/matt123miller"
       target="_blank"
-      class="button--green"
+      class="button--twitter"
     >Twitter</a>
     <a
       href="https://github.com/matt123miller"
       target="_blank"
-      class="button--grey"
+      class="button--github"
     >GitHub</a>
   </div>
 </template>

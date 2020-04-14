@@ -13,7 +13,7 @@
       >
         <nuxt />
       </div>
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </div>
 </template>
@@ -22,13 +22,13 @@
 import { EventBus, Events } from "../components/EventBus";
 import Header from "../components/Header.vue";
 import Nav from "../components/Nav.vue";
-import Footer from "../components/Footer.vue";
+// import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     Header,
     Nav,
-    Footer
+    // Footer
   },
   head() {
     return {
@@ -59,32 +59,32 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button--twitter {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid var(--twitter-blue);
+  color: var(--twitter-blue);
   text-decoration: none;
   padding: 10px 30px;
 }
 
-.button--green:hover {
+.button--twitter:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: var(--twitter-blue);
 }
 
-.button--grey {
+.button--github {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid var(--github-charcoal);
+  color: var(--github-charcoal);
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
-.button--grey:hover {
+.button--github:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: var(--github-charcoal);
 }
 </style>
