@@ -1,20 +1,12 @@
 <template>
   <div class="mt-4">
     <h3 class="mb-4">
-      <a :href="url">{{ title }}</a>
+      <nuxt-link :to="url">{{ title }}</nuxt-link>
     </h3>
-    <div class="mb-8">
-      {{ snippet }}
-    </div>
-    <a
-      v-if="src"
-      :href="url"
-    >
-      <img
-        :src="src"
-        :alt="alt"
-      >
-    </a>
+    <div class="mb-8">{{ snippet }}</div>
+    <nuxt-link v-if="src" :to="url">
+      <img :src="src" :alt="alt" />
+    </nuxt-link>
   </div>
 </template>
 <script>

@@ -1,9 +1,29 @@
 
-Todo:
-  ☐ Update Schema in sanity studio
-  ☐ Properly handle the previews with the new snippet field on blogs.
-    ☐ Only request minimum fields from API for those previews. Don't need body for example.
+Blog pages:
+  ✔ Update Schema in sanity studio @done(20-04-13 12:35)
+  ✔ Properly handle the previews with the new snippet field on blogs. @done(20-04-13 12:35)
+  ☐ Blog images CSS
+    ☐ Preview sizes
+    ☐ Blog post sizes
+    ☐ Responsive
   
-  
+API Client: 
+  ✔ Create a shared api client for sanity accessing blogs @done(20-04-14 12:38)
+  ✔ get all @started(20-04-13 12:39) @done(20-04-13 12:39) @lasted(1m)
+  ✔ get specific @done(20-04-13 22:29)
+  ☐ get recent
+  ✔ expose a default client @done(20-04-13 21:48)
+  ☐ put project id in an env file
+  ✔ An image builder @done(20-04-13 22:29)
+  ☐ Only request minimum fields from API for those previews. Don't need body for example.
+    - A function arg of optional fields to ignore? string array? obj?
+
+
+Continuous Deployment:
+  ☐ Set up a github action to deploy when pushing the master branch
+  ☐ https://dev.to//kenessajr/deploy-a-react-app-to-digitalocean-using-github-actions-and-docker-4pln
+  ☐ https://github.com/matt123miller/personal-site/settings/secrets
+  ☐ Need to check in on my DO server and sort out ssh keys for my desktop WSL
+
 Vuetify? : 
   ☐ https://vuetifyjs.com/en/components/avatars/

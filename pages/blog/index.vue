@@ -1,65 +1,62 @@
-/* eslint-disable vue/no-v-html */
 <template>
   <div>
-    <h2>
-      {{ title }}
-    </h2>
-    
-    <div
-      class="mb-16"
-      v-html="blogContent"
+    <h1 class="mb-8">
+      Blogs
+    </h1>
+    <p
+      class="text-loud mb-4"
+    >
+      Here and there I write an article about tech and my hobbies. I want to focus on programming topics I think will be useful for other developers, especially juniors.
+    </p>
+    <p class="text-loud mb-4">
+      You can expect to see posts about what I do behind the keyboard and away from it. This includes 
+      JavaScript, C#, miniature painting, Dungeons & Dragons and whatever else I want to write about.
+    </p>
+    <Preview
+      v-for="(item, index) in recentBlogs"
+      :key="index"
+      :url="item.url"
+      :title="item.title"
+      :snippet="item.snippet"
+      :src="item.image.src"
+      :alt="item.image.alt"
     />
-
-    <div>
-      <h3>
-        <a href="/blogs"> return to blogs </a>
-      </h3>
-    </div>
   </div>
 </template>
 
 <script>
-import sanityClient from "@sanity/client";
-import blocksToHtml from "@sanity/block-content-to-html";
+import Preview from "./Preview";
+import { getAllPosts, imageFromSource } from "./APIClient";
 
-const client = sanityClient({
-  projectId: "14mnylm0",
-  dataset: "blog-content",
-  useCdn: false
-});
-
-// Create a general purpose one?
-// OR is this only used in the blog page?
-const h = blocksToHtml.h;
-
-const serializers = {
-  types: {
-    code: props =>
-      h("pre", { className: props.node.language }, h("code", props.node.code))
-  }
-};
 
 export default {
   name: "Blogs",
+  components: { Preview },
   async asyncData({ req }) {
     try {
-      const query = "*[_type == 'post']";
-      const params = {}; // provide some sort of limit?
-      const posts = await client.fetch(query, params);
 
-      const title = posts[0].title;
-      // need to not treat it as array, come back here
+      const posts = await getAllPosts();
 
-      const blogContent = blocksToHtml({
-        blocks: posts[0].body,
-        serializers: serializers,
-        projectId: "14mnylm0",
-        dataset: "blog-content"
-      });
+      const recentBlogs = posts.map(p => {
+
+        const image = imageFromSource(p.mainImage);
+        
+        return { 
+          title: p.title,
+          url: '/blog/' + p.slug.current,
+          title: p.title,
+          snippet: p.snippet,
+          image: {
+            src: image.width(200).height(200).url(),
+            alt: undefined
+          }
+          //come back to image later. Do I need any parsing? Or a top level image?
+          // How do i know the url?
+        }
+      })
 
       return {
-        title,
-        blogContent
+        recentBlogs
       };
     } catch (error) {
       console.log(error);
