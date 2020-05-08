@@ -1,3 +1,5 @@
+/* eslint-disable vue/no-v-html */
+// I know what I'm doing, leave me alone eslint
 <template>
   <div>
     <h1 class="mb-8">{{ title }}</h1>

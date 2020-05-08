@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="mb-8">
-      Blogs
+      Blog
     </h1>
     <p
       class="text-loud mb-4"
@@ -30,7 +30,7 @@ import { getAllPosts, imageFromSource } from "./APIClient";
 
 
 export default {
-  name: "Blogs",
+  name: "Blog",
   components: { Preview },
   async asyncData({ req }) {
     try {
