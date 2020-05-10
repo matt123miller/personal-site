@@ -1,6 +1,13 @@
 Readme:
   ☐ Add info about updating Sanity
 
+Blog Posts:
+  ☐ Tidy up my old dnd post 
+  ☐ Migrate / rewrite my old witches house stuff if I can find it
+  ☐ Some basic JS concept stuff
+  ☐ What is an env file
+  ☐ The ordeal of installing imagemagick on my system - https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux
+
 Blog pages:
   ✔ Update Schema in sanity studio @done(20-04-13 12:35)
   ✔ Properly handle the previews with the new snippet field on blogs. @done(20-04-13 12:35)
@@ -8,7 +15,18 @@ Blog pages:
     ☐ Preview sizes
     ☐ Blog post sizes
     ☐ Responsive
-  
+
+Components:
+  ☐ Pull out a global image component for the circular cropped image
+
+Meta Tags:
+  - Nuxt uses this https://nuxtjs.org/api/pages-head
+  ☐ Just get the basics in first. 
+  ☐ basic valid twitter  
+  ☐ basic valid facebook
+  ☐ good SEO tags
+  ☐ Author rel me stuff? I know it exists, go find out.
+
 API Client: 
   ✔ Create a shared api client for sanity accessing blogs @done(20-04-14 12:38)
   ✔ get all @started(20-04-13 12:39) @done(20-04-13 12:39) @lasted(1m)

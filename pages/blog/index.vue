@@ -1,16 +1,13 @@
 <template>
   <div>
-    <h1 class="mb-8">
+    <h1 class="mb-16">
       Blog
     </h1>
-    <p
-      class="text-loud mb-4"
-    >
-      Here and there I write an article about tech and my hobbies. I want to focus on programming topics I think will be useful for other developers, especially juniors.
-    </p>
+  
     <p class="text-loud mb-4">
       You can expect to see posts about what I do behind the keyboard and away from it. This includes 
-      JavaScript, C#, miniature painting, Dungeons & Dragons and whatever else I want to write about.
+      programming, miniature painting, Dungeons & Dragons and whatever else I want to write about. 
+      I want to focus on programming topics I think will be useful for other developers, especially juniors.
     </p>
     <Preview
       v-for="(item, index) in recentBlogs"
@@ -32,6 +29,9 @@ import { getAllPosts, imageFromSource } from "./APIClient";
 export default {
   name: "Blog",
   components: { Preview },
+  head() {
+    return 'Matt Miller - Blog';
+  },
   async asyncData({ req }) {
     try {
 

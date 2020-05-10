@@ -4,13 +4,8 @@
       <Header />
       <Nav />
     </div>
-    <div
-      class="mt-32 min-h-screen w-full pl-12 pr-12 lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pl-16 lg:pr-16 xl:w-4/5 float-right"
-    >
-      <div
-        id="content-container"
-        class="container flex-col"
-      >
+    <div class="mt-32 min-h-screen w-full pl-12 pr-12 lg:static lg:max-h-full lg:overflow-visible lg:w-3/4 lg:pl-16 lg:pr-16 xl:w-4/5 float-right">
+      <div id="content-container" class="container flex-col">
         <nuxt />
       </div>
       <!-- <Footer /> -->
@@ -24,18 +19,53 @@ import Header from "../components/Header.vue";
 import Nav from "../components/Nav.vue";
 // import Footer from "../components/Footer.vue";
 
+// <!-- For Google -->
+// <meta name="description" content="" />
+// <meta name="keywords" content="" />
+
+// <meta name="author" content="" />
+// <meta name="copyright" content="" />
+// <meta name="application-name" content="" />
+
+// <!-- For Facebook -->
+// <meta property="og:title" content="" />
+// <meta property="og:type" content="article" />
+// <meta property="og:image" content="" />
+// <meta property="og:url" content="" />
+// <meta property="og:description" content="" />
+
+// <!-- For Twitter -->
+// <meta name="twitter:card" content="summary" />
+// <meta name="twitter:title" content="" />
+// <meta name="twitter:description" content="" />
+// <meta name="twitter:image" content="" />
+
 export default {
   components: {
     Header,
-    Nav,
+    Nav
     // Footer
   },
   head() {
+    const title = 'Matt Miller';
     return {
-      title: "Matt Miller"
+      title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        // By providing a hid field it means that children components won't be able to overwrite that field in the head?
+        // { hid: 'description', name: 'description', content: 'My custom description' },
+        { name: "og:title", content: title },
+        { name: "og:type", content: "website" },
+        { name: "og:description", content: "Matt Miller's personal website and blog" },
+        { name: "og:Image", content: "/_nuxt/assets/images/selfie-og.png" },
+        { name: "twitter:card", content: "summary" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: "Matt Miller's personal website and blog" },
+        { name: "twitter:image", content: "/_nuxt/assets/images/selfie-og.png" },
+        { name: 'twitter:url', content: this.$nuxt.$route.fullPath }
+      ]
     };
-  },
-  async asyncData({ app }) {}
+  }
 };
 </script>
 

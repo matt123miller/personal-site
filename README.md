@@ -15,6 +15,7 @@ Created using  and  with  lending a helping hand. Initial setup performed by .
 - [Tailwind](https://github.com/tailwindcss/tailwindcss)
 - [Sanity.io](https://sanity.io)
 - [DigitalOcean](https://digitalocean.com)
+- [Windows Subsystem Linux](https://docs.microsoft.com/en-us/windows/wsl/wsl2-about) I'm experimenting with WSL for a local dev environment
 
 ## Scripts
 
@@ -32,6 +33,10 @@ Created using  and  with  lending a helping hand. Initial setup performed by .
 I'm using the [TODO extension](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus) for VSCode. 
 
 You can view the file [here](./TODO).
+
+## Notes:
+
+- I always forget how it works, so here's a link to [ImageMagick for resizing](https://imagemagick.org/script/command-line-options.php#resize)
 
 ## Deployment guide
 
