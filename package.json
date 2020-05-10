@@ -1,7 +1,7 @@
 {
   "name": "personal-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Matt Miller's personal website and blog",
   "author": "Matt Miller",
   "private": true,
   "scripts": {

@@ -1,5 +1,5 @@
 /* eslint-disable vue/no-v-html */
-// I know what I'm doing, leave me alone eslint
+
 <template>
   <div>
     <h1 class="mb-8">{{ title }}</h1>
@@ -39,7 +39,7 @@ export default {
           postHTML,
           title: post.title,
           mainImage: imageFromSource(post.mainImage)
-            .width(200)
+            .width(200) // TODO: Dyanimc image sizing? Probably send full image and let css do it? Or srcset?
             .url()
         };
       })

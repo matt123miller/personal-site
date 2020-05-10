@@ -2,10 +2,10 @@ import path from 'path';
 import Mode from 'frontmatter-markdown-loader/mode';
 
 import pkg from './package';
+import constants from './constants';
 
 const builtAt = new Date().toISOString();
 
-const baseUrl = 'https://matt123miller.dev';
 
 export default {
   mode: 'universal',
@@ -22,7 +22,6 @@ export default {
         content: 'width=device-width, initial-scale=1',
       },
       {
-        hid: 'description',
         name: 'description',
         content: pkg.description,
       },
