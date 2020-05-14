@@ -2,7 +2,7 @@ Readme:
   ☐ Add info about updating Sanity
 
 Blog Posts:
-  ☐ Tidy up my old dnd post 
+  ☐ Tidy up my old dnd post @started(20-05-11 00:45)
   ☐ Migrate / rewrite my old witches house stuff if I can find it
   ☐ Some basic JS concept stuff
   ☐ What is an env file
@@ -21,9 +21,9 @@ Components:
 
 Meta Tags:
   - Nuxt uses this https://nuxtjs.org/api/pages-head
-  ☐ Just get the basics in first. 
-  ☐ basic valid twitter  
-  ☐ basic valid facebook
+  ✔ Just get the basics in first. @done(20-05-11 00:43)
+  ✔ basic valid twitter @done(20-05-11 00:43)
+  ✔ basic valid facebook @done(20-05-11 00:43)
   ☐ good SEO tags
   ☐ Author rel me stuff? I know it exists, go find out.
 
@@ -49,6 +49,7 @@ Continuous Deployment:
     ☐ Security updates?
     ☐ Ubuntu 20 lts @started(20-05-08 14:00)
   ✔ sort out ssh keys for my desktop WSL @done(20-05-08 13:59)
+  
 
 Vuetify? : 
   ☐ https://vuetifyjs.com/en/components/avatars/
