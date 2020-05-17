@@ -60,7 +60,7 @@ function imageFromSource(source) {
 
 // Also have a direct to image url function?
 // It just appends .url() on the end but means I don't have to think about it
-
+// But then I don't get to apply other alterations to it like sizing etc.
 
 // GROQ cheatsheet
 // https://www.sanity.io/docs/query-cheat-sheet

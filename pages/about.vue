@@ -18,7 +18,7 @@
     </p>
     <!-- <img src="" alt="An image of me working with my current team at SimpleClick" srcset=""> -->
     <p>
-      Outside of work I paint, read and play Dungeons & Dragons. I run a D&D game every fortnight and play in another. 
+      Outside of work I paint, listen to a lot of podcasts and play in a variety of Dungeons & Dragons.
       Keep an eye on my blog for hobby content!
     </p>
     <img

@@ -8,7 +8,7 @@
       :src="mainImage"
     >
     <div 
-      class="mb-4" 
+      class="mb-4 blog-text" 
       v-html="postHTML"
     />
     <nuxt-link :to="'/blog'">
