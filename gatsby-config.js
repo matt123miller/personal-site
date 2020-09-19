@@ -4,6 +4,7 @@ module.exports = {
     description: `Gatsby Markdown Personal Website Starter, using Typescript, Styled Components, Tailwindcss and Framer Motion.`,
     author: `Saimir Kapaj`
   },
+  pathPrefix: '/personal-site',
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
