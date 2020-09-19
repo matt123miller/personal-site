@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby.JS`,
-    description: `Gatsby Markdown Personal Website Starter, using Typescript, Styled Components, Tailwindcss and Framer Motion.`,
-    author: `Saimir Kapaj`
+    title: `Matt Miller`,
+    description: `My personal site`,
+    author: `Matt Miller`
   },
   pathPrefix: '/personal-site',
   plugins: [
