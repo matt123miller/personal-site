@@ -4,3 +4,11 @@
 /* purgecss end ignore */
 
 @import 'tailwindcss/utilities';
+
+.blog-post-container {
+    width: 100%;
+}
+
+.format-html {
+    
+}
