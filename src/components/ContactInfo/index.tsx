@@ -56,7 +56,7 @@ const ConctactInfo: React.FC = () => {
           id,
           frontmatter: { title, icon, content }
         } = item.node;
-
+        console.log(item)
         return (
           <Styled.ContactInfoItem key={id}>
             <InfoBlock icon={icon} title={title} content={content} center />
