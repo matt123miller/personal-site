@@ -25,3 +25,8 @@ export const Title = styled.h3`
 export const Content = styled.p`
   ${tw`mt-1`};
 `;
+
+
+export const Link = styled.a`
+  ${tw`text-indigo-900 hover:text-indigo-600 mx-2`};
+`;
