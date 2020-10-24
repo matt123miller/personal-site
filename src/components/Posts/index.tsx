@@ -93,7 +93,6 @@ const Posts: React.FC = () => {
                       <Img fluid={cover.childImageSharp.fluid} alt={title} />
                     </Styled.Image>
                     <Styled.Content>
-                      <Styled.Date>{date}</Styled.Date>
                       <Styled.Title>{title}</Styled.Title>
                       <Styled.Description>{description}</Styled.Description>
                     </Styled.Content>

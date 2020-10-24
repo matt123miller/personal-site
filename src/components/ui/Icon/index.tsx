@@ -18,6 +18,9 @@ library.add(fab, faTwitch, faTwitter, faGithub, faLaptopCode, faDrawPolygon, faE
 
 export type IconProps = FontAwesomeIconProps['icon'];
 
-const Icon: React.FC<FontAwesomeIconProps> = ({ ...props }) => <FontAwesomeIcon {...props} />;
+const Icon: React.FC<FontAwesomeIconProps> = ({ ...props }) => {
+  const combinedProps:FontAwesomeIconProps = { ...props, } ;
+  return (<FontAwesomeIcon {...combinedProps} />)
+}
 
 export default Icon;

@@ -1,9 +1,9 @@
 ---
 category: 'blog'
-cover: './cover.jpg'
+cover: './dice-box.jpg'
 title: 'Blog Post 1'
 description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
-date: '2019-11-13'
+date: '2020-05-22'
 tags: ['Photography']
 published: true
 ---
@@ -13,7 +13,7 @@ _"It would appear you've seen too much" drawls Dormenghast, the enormous green d
 
 **For 3 years now I've been enjoying the resurgence of Dungeons & Dragons (dnd)**
 
-This has reigntied my love for this hobby and what it can do. What started as running a fortnightly game for colleagues at a previous job has evolved to the point where I now play or run multiple games a week. And that was before the world got turned upside down in early 2020. The importance of having a social and creative outlet such as dnd has become even more apparent for myself and countless others who are taking this opportunity to investigate what this is all about.
+This has reignited my love for this hobby and what it can do. What started as running a fortnightly game for colleagues at a previous job has evolved to the point where I now play or run multiple games a week. And that was before the world got turned upside down in early 2020. The importance of having a social and creative outlet such as dnd has become even more apparent for myself and countless others who are taking this opportunity to investigate what this is all about.
 
 But what is it all about? I hope this blog post gives a brief outline for the curious and discusses why I find it so valuable in my personal and professional life.
 A game of 3 parts
