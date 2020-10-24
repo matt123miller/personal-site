@@ -4,11 +4,13 @@ import { useStaticQuery, graphql } from 'gatsby';
 import InfoBlock from 'components/ui/InfoBlock';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
-import { IconProps } from 'components/ui/Icon';
-
+import Icon, { IconProps } from 'components/ui/Icon';
+import { links } from 'data/Constants';
 import { SectionTitle } from 'helpers/definitions';
 
 import * as Styled from './styles';
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 interface Contact {
   node: {
@@ -17,52 +19,31 @@ interface Contact {
       title: string;
       content: string;
       icon: IconProps;
+      link: string;
     };
   };
 }
 
 const ConctactInfo: React.FC = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
-    query {
-      markdownRemark(frontmatter: { category: { eq: "contact section" } }) {
-        frontmatter {
-          title
-          subtitle
-        }
-      }
-      allMarkdownRemark(filter: { frontmatter: { category: { eq: "contact" } } }, sort: { fields: fileAbsolutePath }) {
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-              icon
-              content
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const sectionTitle: SectionTitle = markdownRemark.frontmatter;
-  const contacts: Contact[] = allMarkdownRemark.edges;
-
+ 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      {contacts.map((item) => {
-        const {
-          id,
-          frontmatter: { title, icon, content }
-        } = item.node;
-        console.log(item)
-        return (
-          <Styled.ContactInfoItem key={id}>
-            <InfoBlock icon={icon} title={title} content={content} center />
-          </Styled.ContactInfoItem>
-        );
-      })}
+      <TitleSection title={"Contacts"} subtitle={"For more info contact me"} center />
+
+
+      <Styled.ContactInfoItem key={"gh"}>
+        <InfoBlock icon={faGithub} title={"Github"} content={"@matt123miller"} link={links.github} center />
+      </Styled.ContactInfoItem>
+
+      <Styled.ContactInfoItem key={"tw"}>
+        <InfoBlock icon={faTwitter} title={"Twitter"} content={"@matt123miller"} link={links.twitter} center />
+      </Styled.ContactInfoItem>
+
+      <Styled.ContactInfoItem key={"email"}>
+        <InfoBlock icon={faPaperPlane} title={"Email"} content={links.email} link={`mailto:${links.email}`} center />
+      </Styled.ContactInfoItem>
+
+
     </Container>
   );
 };
