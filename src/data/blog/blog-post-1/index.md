@@ -7,6 +7,9 @@ date: '2020-05-22'
 tags: ['Photography']
 published: true
 ---
+
+![](./dice-box.jpeg)
+
 _You leave the cavern full of Kobolds behind, none the wiser to your presence. Creeping into the inner lair of the beast a treasure of information awaits you. The cave walls are covered in the glistening shapes of letters, snippets of the Draconic Prophecy. Arranged in a seemingly random pattern in the centre of the room are a series of tables. Upon each is something resembling chess boards, though formed of hexagonal shapes. Each board has wildly different pieces though. Most are foreign to you but with some investigationg a few grab your eyes, what you recognise as miniature figurines of yourselves. Suddenly an arrogant voice reverberates around the chamber._
 
 _"It would appear you've seen too much" drawls Dormenghast, the enormous green dragon that calls this place home._
@@ -16,16 +19,24 @@ _"It would appear you've seen too much" drawls Dormenghast, the enormous green d
 This has reignited my love for this hobby and what it can do. What started as running a fortnightly game for colleagues at a previous job has evolved to the point where I now play or run multiple games a week. And that was before the world got turned upside down in early 2020. The importance of having a social and creative outlet such as dnd has become even more apparent for myself and countless others who are taking this opportunity to investigate what this is all about.
 
 But what is it all about? I hope this blog post gives a brief outline for the curious and discusses why I find it so valuable in my personal and professional life.
-A game of 3 parts
+
+**A game of 3 parts**
 
 Games like dnd are generally designed in a way to facilitate 3 main areas of play: Adventure, Combat and Roleplay.
 
-Adventure - Describe how your characters can interact with the environment to solve challenges, puzzles and traverse the world around thenm.
+***Adventure***
 
-Combat - What happens when you meet people or creatures that only swords and spells can defeat?
+Describe how your characters can interact with the environment to solve challenges, puzzles and traverse the world around thenm.
 
-Roleplay - Interacting with other characters
-Golden rules
+***Combat***
+
+What happens when you meet people or creatures that only swords and spells can defeat?
+
+***Roleplay***
+
+Interacting with other characters
+
+**Golden rules**
 
 People gathered around a table, one of them narrating a scene to the others, dice, A4 sheets full of numbers, maybe a map with miniature avatars of characters. It certainly looks intimidating but it can all be boiled down to 2 core factors. Having fun and resolving conflict through dice rolls and your characters abilities. There are many similar games to dnd and though you cannot deny dnd is the most popular I believe they still revolve around those 2 factors.
 
@@ -35,11 +46,16 @@ But the characters you control CAN accomplish those things and more and you need
 
 And what you add or subtract from that roll can be impacted by so many things. Players create a character, an avatar they control, and pick their character’s class, race, appearance, their background, personality traits they think would work for this concept and these details help refine what their character would be good at.
 
-So for example Jess creates Jorg, a burly half-orc just as likely to resolve conflict with a negotiators patience and conversation as they are with the cracking of skulls. In combat and when trying to get information from the locals in a tavern Jorg will probably be adding a lot to that D20! But sneaking through the defenses of an ancient ruin and solving the puzzles within like our whip wielding hero above? Probably out of Jorg's wheel house and Jess wouldn't be able to positively alter that random dice roll as much.
+So for example Jess creates Lamarch, a burly half-orc just as likely to resolve conflict with a negotiators patience and conversation as they are with the cracking of skulls. In combat and when trying to get information from the locals in a tavern Lamarch will probably be adding a lot to that D20! But sneaking through the defenses of an ancient ruin and solving the puzzles within like our whip wielding hero above? Probably out of Lamarch's wheel house and Jess wouldn't be able to positively alter that random dice roll as much.
 
 I only provide both sides of the story because it better represents a real person. We all have our skills and weaknesses.
 
-    "But Matt! This game is imaginary, it provides escapism! Why would I want to bad at something!?"
+---
+
+    But Matt! This game is imaginary, it provides escapism! 
+    Why would I want to bad at something!?
+
+---
 
 I hear you, random internet stranger. Bear with me.
 Wait, this is fun?
@@ -62,8 +78,3 @@ Games like this make me want to create stories and the worlds they take place in
 P.S.
 
 This post doesn't really cover the role of the Game Master (GM), I have a whole post planned for that which I'll release soon. I also have some thoughts about how to bring your group from the traditional in person setting to a virtual online one, the lessons learned by rapidly moving the 3 different groups I played with physically to a purely online game due to COVID-19. That will also have to wait.
-
-
-_Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat._.
-
-**Sed ut perspiciatis unde omnis**
