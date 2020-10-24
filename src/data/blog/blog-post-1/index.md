@@ -1,6 +1,6 @@
 ---
 category: 'blog'
-cover: './dice-box.jpg'
+cover: './dice-box.jpeg'
 title: 'Blog Post 1'
 description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
 date: '2020-05-22'
