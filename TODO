@@ -7,39 +7,25 @@ Blog Posts:
   ☐ Some basic JS concept stuff
   ☐ What is an env file
   ☐ The ordeal of installing imagemagick on my system - https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux
+  ☐ gitkraken and windows terminal alt + t
 
 Blog pages:
-  ✔ Update Schema in sanity studio @done(20-04-13 12:35)
-  ✔ Properly handle the previews with the new snippet field on blogs. @done(20-04-13 12:35)
+  ☐ blog snippets?.
   ☐ Blog images CSS
     ☐ Preview sizes
     ☐ Blog post sizes
     ☐ Responsive
   ☐ General content CSS
-    ☐ Fix wide page issue @started(20-05-14 18:09)
+    ☐ Fix wide page issue
 
 Components:
-  ☐ Pull out a global image component for the circular cropped image
 
 Meta Tags:
-  - Nuxt uses this https://nuxtjs.org/api/pages-head
-  ✔ Just get the basics in first. @done(20-05-11 00:43)
-  ✔ basic valid twitter @done(20-05-11 00:43)
-  ✔ basic valid facebook @done(20-05-11 00:43)
+  ☐ Just get the basics in first.
+  ☐ basic valid twitter
+  ☐ basic valid facebook
   ☐ good SEO tags
   ☐ Author rel me stuff? I know it exists, go find out.
-
-API Client: 
-  ✔ Create a shared api client for sanity accessing blogs @done(20-04-14 12:38)
-  ✔ get all @started(20-04-13 12:39) @done(20-04-13 12:39) @lasted(1m)
-  ✔ get specific @done(20-04-13 22:29)
-  ☐ get recent
-  ✔ expose a default client @done(20-04-13 21:48)
-  ☐ put project id in an env file
-  ✔ An image builder @done(20-04-13 22:29)
-  ☐ Only request minimum fields from API for those previews. Don't need body for example.
-    - A function arg of optional fields to ignore? string array? obj?
-
 
 Continuous Deployment:
   ☐ Set up a github action to deploy when pushing the master branch
@@ -53,5 +39,3 @@ Continuous Deployment:
   ✔ sort out ssh keys for my desktop WSL @done(20-05-08 13:59)
   
 
-Vuetify? : 
-  ☐ https://vuetifyjs.com/en/components/avatars/
