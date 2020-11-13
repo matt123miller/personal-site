@@ -21,8 +21,8 @@ interface Service {
   };
 }
 
-const Services: React.FC = () => {
-  const { markdownRemark, allMarkdownRemark } = useStaticQuery(graphql`
+function getDataQuery(): { markdownRemark: any; allMarkdownRemark: any; } {
+  return useStaticQuery(graphql`
     query {
       markdownRemark(frontmatter: { category: { eq: "services section" } }) {
         frontmatter {
@@ -44,9 +44,25 @@ const Services: React.FC = () => {
       }
     }
   `);
+}
+
+
+const Services: React.FC = () => {
+
+  const { markdownRemark, allMarkdownRemark } = getDataQuery();
 
   const sectionTitle: SectionTitle = markdownRemark.frontmatter;
   const services: Service[] = allMarkdownRemark.edges;
+
+
+
+
+  // TODO: sort out the info block icons since I updated the Icons for contact me page 
+
+
+
+
+
 
   return (
     <Container section>
@@ -70,3 +86,4 @@ const Services: React.FC = () => {
 };
 
 export default Services;
+

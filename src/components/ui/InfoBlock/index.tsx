@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 import Icon, { IconProps } from 'components/ui/Icon';
 
@@ -9,23 +9,19 @@ interface Props extends Styled.StyledProps {
   title: string;
   content: React.ReactNode;
   icon: Icon;
-  link: string;
   center?: boolean;
 }
 
-const InfoBlock: React.FC<Props> = ({ icon, title, content, center, link }) => (
-  <Styled.Link href={link} rel="noreferrer noopener" target="_blank">
-    <Styled.InfoBlock center={center}>
-      <Styled.Icon>
-        {icon}
-        {/* <Icon icon={icon}  /> */}
-      </Styled.Icon>
-      <Styled.Wrapper center={center}>
-        <Styled.Title>{title}</Styled.Title>
-        <Styled.Content>{content}</Styled.Content>
-      </Styled.Wrapper>
-    </Styled.InfoBlock>
-  </Styled.Link>
+const InfoBlock: React.FC<Props> = ({ icon, title, content, center }) => (
+  <>
+    <Styled.Icon>
+      {icon}
+    </Styled.Icon>
+    <Styled.Wrapper center={center}>
+      <Styled.Title>{title}</Styled.Title>
+      <Styled.Content>{content}</Styled.Content>
+    </Styled.Wrapper>
+  </>
 );
 
 export default InfoBlock;

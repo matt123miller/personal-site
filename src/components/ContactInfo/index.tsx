@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import LinkCard from 'components/ui/LinkCard';
 import InfoBlock from 'components/ui/InfoBlock';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
@@ -14,7 +15,7 @@ import * as Styled from './styles';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
-const ConctactInfo: React.FC = () => {
+const ContactInfo: React.FC = () => {
  
   const github = <Icon icon={faGithub} size="2x" />;
   const twitter = <Icon icon={faTwitter} size="2x" />;
@@ -25,15 +26,21 @@ const ConctactInfo: React.FC = () => {
       <TitleSection title={"Contacts"} subtitle={"For more info contact me"} center />
 
       <Styled.ContactInfoItem key={"gh"}>
-        <InfoBlock icon={github} title={"Github"} content={"@matt123miller"} link={links.github} center />
+        <LinkCard link={links.github} center>
+          <InfoBlock icon={github} title={"Github"} content={"@matt123miller"} center/>
+        </LinkCard>
       </Styled.ContactInfoItem>
 
       <Styled.ContactInfoItem key={"tw"}>
-        <InfoBlock icon={twitter} title={"Twitter"} content={"@matt123miller"} link={links.twitter} center />
+        <LinkCard link={links.twitter} center>
+          <InfoBlock icon={twitter} title={"Twitter"} content={"@matt123miller"} center />
+        </LinkCard>
       </Styled.ContactInfoItem>
 
       <Styled.ContactInfoItem key={"email"}>
-        <InfoBlock icon={email} title={"Email"} content={links.email} link={`mailto:${links.email}`} center />
+        <LinkCard link={`mailto:${links.email}`} center>
+          <InfoBlock icon={email} title={"Email"} content={links.email}  center/>
+        </LinkCard>
       </Styled.ContactInfoItem> 
 
 
@@ -41,4 +48,4 @@ const ConctactInfo: React.FC = () => {
   );
 };
 
-export default ConctactInfo;
+export default ContactInfo;
