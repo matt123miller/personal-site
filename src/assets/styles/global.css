@@ -5,6 +5,36 @@
 
 @import 'tailwindcss/utilities';
 
+body {
+  --accent-colour: #4fd1c5;
+  --charcoal: #333333;
+}
+/* @layer base {
+  
+} */
+
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-xl;
+}
+h4 {
+  @apply text-lg;
+}
+a {
+  color: var(--accent-colour);
+}
+
+/* p followed by p, cool stuff */
+p + p {
+  @apply mt-3;
+}
+
+/* Almost certainly not needed */
 .blog-post-container {
     width: 100%;
 }
