@@ -2,6 +2,7 @@ import React from 'react';
 
 import * as Styled from './styles';
 import { StyledProps } from './styles';
+import Separator from 'components/ui/Separator';
 
 interface Props extends StyledProps {
   title: string;
@@ -9,11 +10,11 @@ interface Props extends StyledProps {
 }
 
 const TitleSection: React.FC<Props> = ({ center, title, subtitle }) => (
-  <Styled.TitleSection>
+  <div className="flex flex-col w-full">
     {subtitle && <Styled.SubTitle center={center}>{subtitle}</Styled.SubTitle>}
     <Styled.Title center={center}>{title}</Styled.Title>
-    <Styled.Separator center={center} />
-  </Styled.TitleSection>
+    <Separator center={center}/>
+  </div>
 );
 
 export default TitleSection;

@@ -31,18 +31,22 @@ const HeroBanner: React.FC = () => {
 
 
   return (
-    <div className="flex flex-wrap max-w-screen-md w-full mx-auto p-5">
-      <h1 id="name_title">
+    <div className="max-w-screen-md w-full mx-auto p-5 mt-8">
+      <h1 id="name_title" className="text-center">
 
-      hello world h1
-{/*         
-        <span>H</span><span>i</span><span>,</span> 
-        <span>I</span><span>'</span><span>m</span> 
-        <span>M</span><span>a</span><span>t</span><span>t</span> */}
+        hello world h1
+      
       </h1>
     </div>
   )
-  // return (
+  
+  {/*         
+        <span>H</span><span>i</span><span>,</span> 
+        <span>I</span><span>'</span><span>m</span> 
+        <span>M</span><span>a</span><span>t</span><span>t</span> */}
+  
+  
+        // return (
   //   <Banner
   //     title={heroBanner.title}
   //     subtitle={heroBanner.subtitle}

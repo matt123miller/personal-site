@@ -9,6 +9,7 @@ body {
   --accent-colour: #4fd1c5;
   --charcoal: #333333;
 }
+
 /* @layer base {
   
 } */
@@ -33,6 +34,21 @@ a {
 p + p {
   @apply mt-3;
 }
+
+.separator-icon {
+  @apply relative w-2 h-8 mb-6 -mt-2;
+}
+
+.separator-icon::before {
+  content: '';
+  @apply bg-indigo-500 h-full w-px absolute left-0;
+}
+
+.separator-icon::after {
+  content: '';
+  @apply bg-teal-400 h-6 w-px absolute ml-1;
+}
+
 
 /* Almost certainly not needed */
 .blog-post-container {
