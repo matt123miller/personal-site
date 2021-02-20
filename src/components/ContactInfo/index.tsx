@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import LinkCard from 'components/ui/LinkCard';
 import InfoBlock from 'components/ui/InfoBlock';
-import Container from 'components/ui/Container';
+import Cotnainer from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import Icon, { IconProps } from 'components/ui/Icon';
 import { FontAwesomeIcon, FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
@@ -20,7 +20,7 @@ const ContactInfo: React.FC = () => {
   const email = <Icon className={'text-white'} icon={faPaperPlane} size="2x" />;
 
   return (
-    <Container section>
+    <Cotnainer section>
       <TitleSection title={"Contacts"} subtitle={"For more info contact me"} center />
 
       <div className="w-full sm:w-1/3" key={"gh"}>
@@ -40,7 +40,7 @@ const ContactInfo: React.FC = () => {
           <InfoBlock icon={email} title={"Email"} content={links.email}  center/>
         </LinkCard>
       </div> 
-    </Container>
+    </Cotnainer>
   );
 };
 
