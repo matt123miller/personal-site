@@ -12,27 +12,7 @@ export const MainNav = styled.nav<StyledProps>`
   ${({ open }) => open && tw`flex`};
 `;
 
-export const MainNavItem = motion.custom(styled(Link)`
-  ${tw`relative text-indigo-900 border-b border-transparent hover:text-indigo-900 ml-0 sm:ml-8 mt-3 sm:mt-0`};
-  width: max-content;
 
-  &.active {
-    ${tw`border-teal-400`};
-  }
-
-  &:before {
-    ${tw`absolute w-full bg-teal-400 h-px left-0 invisible`};
-    content: '';
-    bottom: -1px;
-    transform: scaleX(0);
-    transition: 0.2s;
-  }
-
-  &:hover:before {
-    ${tw`visible`};
-    transform: scaleX(1);
-  }
-`);
 
 export const ToogleMainNav = styled.button<StyledProps>`
   ${tw`flex flex-col items-end justify-center cursor-pointer w-6 h-5 sm:hidden`};

@@ -2,25 +2,25 @@ import React, { Fragment } from 'react';
 
 import Icon, { IconProps } from 'components/ui/Icon';
 
-import * as Styled from './styles';
+import { Wrapper, WrapperProps } from '../SharedStyles';
 import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 
-interface Props extends Styled.StyledProps {
+interface Props extends WrapperProps {
   title: string;
   content: React.ReactNode;
-  icon: Icon;
-  center?: boolean;
+  // @ts-ignore 'Icon' refers to a value, but is being used as a type here. Did you mean 'typeof Icon'?"
+  icon: Icon; 
 }
 
 const InfoBlock: React.FC<Props> = ({ icon, title, content, center }) => (
   <>
-    <Styled.Icon>
+    <span className="icon-16">
       {icon}
-    </Styled.Icon>
-    <Styled.Wrapper center={center}>
-      <Styled.Title>{title}</Styled.Title>
-      <Styled.Content>{content}</Styled.Content>
-    </Styled.Wrapper>
+    </span>
+    <Wrapper center={center}>
+      <h3 className="text-md mt-1 font-semibold">{title}</h3>
+      <p className="mt-1">{content}</p>
+    </Wrapper>
   </>
 );
 

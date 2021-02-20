@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'gatsby';
 
 import * as Styled from './styles';
 
@@ -32,16 +33,18 @@ const MainNav: React.FC = () => {
   return (
     <>
       <Styled.MainNav open={open}>
-        {mainNavItems.map((item, index) => (
-          <Styled.MainNavItem
-            key={`nav-item-${index}`}
-            to={item.slug}
-            activeClassName="active"
-            whileTap={{ scale: 0.9 }}
-          >
-            {item.title}
-          </Styled.MainNavItem>
-        ))}
+        {
+          mainNavItems.map((item, index) => (
+            <Link 
+              className={'main-nav-item animated-link'}
+              key={`nav-item-${index}`}
+              to={item.slug}
+              activeClassName="active"
+            >
+              {item.title}
+            </Link>
+          ))
+        }
       </Styled.MainNav>
       <Styled.ToogleMainNav open={open} onClick={() => setOpen(!open)}>
         <span />
@@ -53,3 +56,27 @@ const MainNav: React.FC = () => {
 };
 
 export default MainNav;
+
+/**
+ export const MainNavItem = motion.custom(styled(Link)`
+  ${tw`relative text-indigo-900 border-b border-transparent hover:text-indigo-900 ml-0 sm:ml-8 mt-3 sm:mt-0`};
+  width: max-content;
+
+  &.active {
+    ${tw`border-teal-400`};
+  }
+
+  &:before {
+    ${tw`absolute w-full bg-teal-400 h-px left-0 invisible`};
+    content: '';
+    bottom: -1px;
+    transform: scaleX(0);
+    transition: 0.2s;
+  }
+
+  &:hover:before {
+    ${tw`visible`};
+    transform: scaleX(1);
+  }
+`);
+ */

@@ -2,7 +2,7 @@ Readme:
   ☐ Add info about updating Sanity
 
 Blog Posts:
-  ☐ Tidy up my old dnd post @started(20-05-11 00:45)
+  ✘ Tidy up my old dnd post @started(20-05-11 00:45) @cancelled(21-02-20 17:09) @wasted(40w5d17h24m26s)
   ☐ Migrate / rewrite my old witches house stuff if I can find it
   ☐ Some basic JS concept stuff
   ☐ What is an env file
@@ -36,7 +36,7 @@ Continuous Deployment:
     ☐ Updates?
     ✔ Node js version @done(20-05-08 13:59)
     ☐ Security updates?
-    ☐ Ubuntu 20 lts @started(20-05-08 14:00)
+    ✔ Ubuntu 20 lts @started(20-05-08 14:00) @done(21-02-20 17:09) @lasted(41w1d4h9m34s)
   ✔ sort out ssh keys for my desktop WSL @done(20-05-08 13:59)
   
 

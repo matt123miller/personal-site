@@ -8,6 +8,25 @@
 body {
   --accent-colour: #4fd1c5;
   --charcoal: #333333;
+  --off-white: #f7fafc;
+
+  --dracula-background : #282A36;
+  --dracula-foreground : #F8F8F2;
+  --dracula-selection : #44475A;
+  --dracula-comment : #6272A4;
+  --dracula-red : #FF5555;
+  --dracula-orange : #FFB86C;
+  --dracula-yellow : #F1FA8C;
+  --dracula-green : #50FA7B;
+  --dracula-purple : #BD93F9;
+  --dracula-cyan : #8BE9FD;
+  --dracula-pink : #FF79C6;
+}
+
+body {
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+  user-select: var(--dracula-selection);
 }
 
 /* @layer base {
@@ -26,13 +45,62 @@ h3 {
 h4 {
   @apply text-lg;
 }
+
 a {
-  color: var(--accent-colour);
+  color: var(--dracula-cyan);
 }
 
 /* p followed by p, cool stuff */
 p + p {
   @apply mt-3;
+}
+
+/* hover link effect */
+/* Not working on regular a? But does on main-nav-item?!?! */
+.animated-link {
+  color: var(--dracula-cyan);
+  text-decoration: none;
+  transition: 0.5s;
+}
+.animated-link:hover {
+  transition: right .2s cubic-bezier(0,.5,0,1),
+              border-color .2s ease-out;
+}
+.animated-link::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: var(--dracula-cyan);
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.animated-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+header {
+  background-color: var(--dracula-selection);
+  border-bottom-color: var(--dracula-comment);
+  color: var(--dracula-cyan);
+}
+
+footer {
+  border-top: 2px solid var(--dracula-selection);
+  @apply py-4;
+}
+.main-nav-item {
+  width: max-content;
+  @apply relative ml-3 pb-1;
+}
+
+.main-nav-item.active {
+  border-bottom: 2px solid var(--dracula-cyan);
 }
 
 .separator-icon {
@@ -41,18 +109,29 @@ p + p {
 
 .separator-icon::before {
   content: '';
-  @apply bg-indigo-500 h-full w-px absolute left-0;
+  background-color: var(--dracula-cyan);
+  @apply  h-full w-px absolute left-0;
 }
 
 .separator-icon::after {
   content: '';
-  @apply bg-teal-400 h-6 w-px absolute ml-1;
+  background-color: var(--dracula-pink);
+  @apply h-6 w-px absolute ml-1;
 }
 
 
-/* Almost certainly not needed */
-.blog-post-container {
-    width: 100%;
+.icon {
+  @apply flex items-center justify-center border rounded-full mb-2;
+}
+
+.icon-16{
+  @apply icon w-16 h-16;
+}
+
+.link-card-content {
+  background-color: var(--dracula-selection);
+  border: 1px solid var(--dracula-cyan);
+  @apply flex flex-col my-4 mx-3 p-4  rounded-lg border;
 }
 
 .format-html {

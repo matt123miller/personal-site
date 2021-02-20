@@ -54,33 +54,13 @@ const Services: React.FC = () => {
   const sectionTitle: SectionTitle = markdownRemark.frontmatter;
   const services: Service[] = allMarkdownRemark.edges;
 
-
-
-
-  // TODO: sort out the info block icons since I updated the Icons for contact me page 
-
-
-
-
-
-
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
-      <Styled.Services>
-        {services.map((item) => {
-          const {
-            id,
-            frontmatter: { title, icon, description }
-          } = item.node;
-
-          return (
-            <Styled.ServiceItem key={id}>
-              <InfoBlock icon={icon} title={title} content={description} />
-            </Styled.ServiceItem>
-          );
-        })}
-      </Styled.Services>
+      hello world, I am a container
+      <p>bing bon
+      </p>
+      <p>legend tells</p>
+      <p>of a websites</p>
     </Container>
   );
 };

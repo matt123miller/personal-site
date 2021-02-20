@@ -10,12 +10,13 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ siteTitle }) => (
-  <Styled.Header>
-    <Styled.Wrapper>
-      <Logo />
-      <MainNav />
-    </Styled.Wrapper>
-  </Styled.Header>
+  
+    <header className="-mb-px">
+      <Styled.Wrapper>
+        <Logo />
+        <MainNav />
+      </Styled.Wrapper>
+    </header>
 );
 
 Header.defaultProps = {
