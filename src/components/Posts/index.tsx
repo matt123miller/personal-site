@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
+import LinkCard from 'components/ui/LinkCard';
 
 import { SectionTitle, ImageSharpFluid } from 'helpers/definitions';
 
@@ -75,7 +76,7 @@ const Posts: React.FC = () => {
 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} center />
+      <TitleSection title={'BLOG'} center />
       <Styled.Posts>
         {posts.map((item) => {
           const {
@@ -86,9 +87,11 @@ const Posts: React.FC = () => {
 
           return (
             <Styled.Post key={id}>
-              <Link to={slug}>
+              {/* <Link to={slug}> */}
+                  <LinkCard link={slug} center>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
-                  <Styled.Card>
+                  {/* <Styled.Card> */}
+
                     <Styled.Image>
                       <Img fluid={cover.childImageSharp.fluid} alt={title} />
                     </Styled.Image>
@@ -101,9 +104,10 @@ const Posts: React.FC = () => {
                         <Styled.Tag key={item}>{item}</Styled.Tag>
                       ))}
                     </Styled.Tags>
-                  </Styled.Card>
+                  {/* </Styled.Card> */}
                 </motion.div>
-              </Link>
+                    </LinkCard>
+              {/* </Link> */}
             </Styled.Post>
           );
         })}

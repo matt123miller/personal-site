@@ -9,7 +9,6 @@ const ResumePage: React.FC = () => (
   <Layout>
     <SEO title="Resume" />
     <Experience />
-    <hr />
     <Education />
   </Layout>
 );

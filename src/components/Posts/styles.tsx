@@ -14,7 +14,7 @@ export const Card = styled.div`
 `;
 
 export const Content = styled.div`
-  ${tw`p-4 text-indigo-900`};
+  ${tw`p-4`};
 `;
 
 export const Image = styled.figure`
@@ -28,7 +28,7 @@ export const Title = styled.h3`
 export const Description = styled.p``;
 
 export const Date = styled.h3`
-  ${tw`text-xs text-indigo-500`};
+  ${tw`text-xs`};
 `;
 
 export const Tags = styled.div`

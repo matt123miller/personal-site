@@ -55,7 +55,7 @@ const Education: React.FC = () => {
 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
+      <TitleSection title={sectionTitle.title} />
 
       {education.map((item) => {
         const {
