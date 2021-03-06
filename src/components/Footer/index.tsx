@@ -11,11 +11,11 @@ const Footer: React.FC = () => (
     <Container>
       <div className="flex items-center justify-center w-full">
         <Icon icon={faGithub} size="2x" />
-        <a className="mx-2" href={links.github} rel="noreferrer noopener" target="_blank">
+        <a className="mx-2 animated-link" href={links.github} rel="noreferrer noopener" target="_blank">
           GitHub
         </a>
         <Icon className={'ml-5'} icon={faTwitter} size="2x" />
-        <a className="mx-2" href={links.twitter} rel="noreferrer noopener" target="_blank">
+        <a className="mx-2 animated-link" href={links.twitter} rel="noreferrer noopener" target="_blank">
           Twitter
         </a>
       </div>

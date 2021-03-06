@@ -59,6 +59,7 @@ p + p {
 /* Not working on regular a? But does on main-nav-item?!?! */
 .animated-link {
   color: var(--dracula-cyan);
+  position: relative;
   text-decoration: none;
   transition: 0.5s;
 }
