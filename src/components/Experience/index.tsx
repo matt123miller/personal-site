@@ -55,7 +55,7 @@ const Experience: React.FC = () => {
 
   return (
     <Container section>
-      <TitleSection title={sectionTitle.title} subtitle={sectionTitle.subtitle} />
+      <TitleSection title={sectionTitle.title}/>
 
       {experiences.map((item) => {
         const {
