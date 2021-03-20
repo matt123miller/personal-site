@@ -1,8 +1,11 @@
 /* purgecss start ignore */
+/* purgecss end ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-/* purgecss end ignore */
+
+/* TODO: Not purging css during dev, allows adding new classes in browser   */
+
 
 body {
   --accent-colour: #4fd1c5;
@@ -134,11 +137,15 @@ a {
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
-  @apply flex flex-col my-4 mx-3 p-4 rounded-lg border;
+  @apply flex flex-col my-4 mx-3 rounded-lg border;
 }
 
 /* General content stuff */
 
+.blog-preview-image {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
 /* p followed by p, mostly for content pages */
 p + p {
   @apply mt-3;

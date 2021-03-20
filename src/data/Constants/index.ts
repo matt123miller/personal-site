@@ -9,3 +9,5 @@ export const links = {
   twitter,
   email,
 }
+
+export const blogTags = ['Code', 'JS', 'D&D', 'Mini Painting'];

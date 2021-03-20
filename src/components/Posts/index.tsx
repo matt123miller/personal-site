@@ -7,10 +7,9 @@ import { motion } from 'framer-motion';
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import LinkCard from 'components/ui/LinkCard';
-
+import { blogTags } from 'data/Constants';
 import { SectionTitle, ImageSharpFluid } from 'helpers/definitions';
 
-import * as Styled from './styles';
 
 interface Post {
   node: {
@@ -72,42 +71,48 @@ const Posts: React.FC = () => {
   `);
 
   const sectionTitle: SectionTitle = markdownRemark.frontmatter;
-  const posts: Post[] = allMarkdownRemark.edges;
+  const posts: Post[] = [...allMarkdownRemark.edges, ...allMarkdownRemark.edges, ...allMarkdownRemark.edges, ...allMarkdownRemark.edges];
 
   return (
     <Container section>
       <TitleSection title={'BLOG'} center />
-      <Styled.Posts>
-        {posts.map((item) => {
-          const {
-            id,
-            fields: { slug },
-            frontmatter: { title, cover, description, date, tags }
-          } = item.node;
+      <div className="w-full flex flex-wrap">
+        {
+          blogTags.map(t => {
+            //What do I do with the tags?
+          })
+        }
+        {
+          posts.map((item) => {
+            const {
+              id,
+              fields: { slug },
+              frontmatter: { title, cover, description, date, tags }
+            } = item.node;
 
-          return (
-            <Styled.Post key={id}>
-              <LinkCard link={slug} internal center>
+            return (
+              <div className="w-full sm:w-1/2 p-3" key={id}>
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
-
-                  <Styled.Image>
-                    <Img fluid={cover.childImageSharp.fluid} alt={title} />
-                  </Styled.Image>
-                  <Styled.Content>
-                    <Styled.Title>{title}</Styled.Title>
-                    <Styled.Description>{description}</Styled.Description>
-                  </Styled.Content>
-                  <Styled.Tags>
-                    {tags.map((item) => (
-                      <Styled.Tag key={item}>{item}</Styled.Tag>
-                    ))}
-                  </Styled.Tags>
+                  <LinkCard link={slug} internal center>
+                    <figure className="w-full">
+                      <Img className="blog-preview-image" fluid={cover.childImageSharp.fluid} alt={title} />
+                    </figure>
+                    <div className="p-4">
+                      <h3 className="font-semibold mb-4">{title}</h3>
+                      <p>{description}</p>
+                    </div>
+                    <div className="p-4 pt-2 mt-auto">
+                      {tags.map((item) => (
+                        <span className="text-xs rounded-full px-2 py-1 mr-2" key={item}>{item}</span>
+                      ))}
+                    </div>
+                  </LinkCard>
                 </motion.div>
-              </LinkCard>
-            </Styled.Post>
-          );
-        })}
-      </Styled.Posts>
+              </div>
+            );
+          })
+        }
+      </div>
     </Container>
   );
 };

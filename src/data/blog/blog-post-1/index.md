@@ -1,10 +1,10 @@
 ---
 category: 'blog'
 cover: './dice-box.jpeg'
-title: 'Blog Post 1'
-description: 'Mauris neque libero, aliquet vel mollis nec, euismod sed tellus. Mauris convallis dictum elit id volutpat.'
+title: 'D&D&Me'
+description: 'What D&D means to me and why it should matter to you'
 date: '2020-05-22'
-tags: ['Photography']
+tags: ['D&D']
 published: true
 ---
 
