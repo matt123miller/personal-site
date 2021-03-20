@@ -1,32 +1,48 @@
 /* purgecss start ignore */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 /* purgecss end ignore */
-
-@import 'tailwindcss/utilities';
 
 body {
   --accent-colour: #4fd1c5;
   --charcoal: #333333;
   --off-white: #f7fafc;
 
-  --dracula-background : #282A36;
-  --dracula-foreground : #F8F8F2;
-  --dracula-selection : #44475A;
-  --dracula-comment : #6272A4;
-  --dracula-red : #FF5555;
-  --dracula-orange : #FFB86C;
-  --dracula-yellow : #F1FA8C;
-  --dracula-green : #50FA7B;
-  --dracula-purple : #BD93F9;
-  --dracula-cyan : #8BE9FD;
-  --dracula-pink : #FF79C6;
+  --dracula-background: #282a36;
+  --dracula-foreground: #f8f8f2;
+  --dracula-selection: #44475a;
+  --dracula-comment: #6272a4;
+  --dracula-red: #ff5555;
+  --dracula-orange: #ffb86c;
+  --dracula-yellow: #f1fa8c;
+  --dracula-green: #50fa7b;
+  --dracula-purple: #bd93f9;
+  --dracula-cyan: #8be9fd;
+  --dracula-pink: #ff79c6;
 }
 
 body {
   background-color: var(--dracula-background);
   color: var(--dracula-foreground);
   user-select: var(--dracula-selection);
+}
+
+header {
+  min-height: 10vh;
+  background-color: var(--dracula-selection);
+  border-bottom-color: var(--dracula-comment);
+  color: var(--dracula-cyan);
+}
+
+main {
+  min-height: 70vh;
+}
+
+footer {
+  min-height: 10vh;
+  border-top: 2px solid var(--dracula-selection);
+  @apply py-4;
 }
 
 /* @layer base {
@@ -46,17 +62,23 @@ h4 {
   @apply text-lg;
 }
 
+/** Nav things */
+
+.main-nav-item {
+  width: max-content;
+  @apply relative ml-3 pb-1;
+}
+
+.main-nav-item.active {
+  border-bottom: 2px solid var(--dracula-cyan);
+}
+
+/* hover link effect */
+
 a {
   color: var(--dracula-cyan);
 }
 
-/* p followed by p, cool stuff */
-p + p {
-  @apply mt-3;
-}
-
-/* hover link effect */
-/* Not working on regular a? But does on main-nav-item?!?! */
 .animated-link {
   color: var(--dracula-cyan);
   position: relative;
@@ -64,8 +86,7 @@ p + p {
   transition: 0.5s;
 }
 .animated-link:hover {
-  transition: right .2s cubic-bezier(0,.5,0,1),
-              border-color .2s ease-out;
+  transition: right 0.2s cubic-bezier(0, 0.5, 0, 1), border-color 0.2s ease-out;
 }
 .animated-link::after {
   position: absolute;
@@ -84,57 +105,47 @@ p + p {
   transform-origin: left;
 }
 
-
-header {
-  background-color: var(--dracula-selection);
-  border-bottom-color: var(--dracula-comment);
-  color: var(--dracula-cyan);
-}
-
-footer {
-  border-top: 2px solid var(--dracula-selection);
-  @apply py-4;
-}
-.main-nav-item {
-  width: max-content;
-  @apply relative ml-3 pb-1;
-}
-
-.main-nav-item.active {
-  border-bottom: 2px solid var(--dracula-cyan);
-}
+/** Icon stuff */
 
 .separator-icon {
   @apply relative w-2 h-8 mb-6 -mt-2;
 }
 
 .separator-icon::before {
-  content: '';
+  content: "";
   background-color: var(--dracula-cyan);
-  @apply  h-full w-px absolute left-0;
+  @apply h-full w-px absolute left-0;
 }
 
 .separator-icon::after {
-  content: '';
+  content: "";
   background-color: var(--dracula-pink);
   @apply h-6 w-px absolute ml-1;
 }
-
 
 .icon {
   @apply flex items-center justify-center border rounded-full mb-2;
 }
 
-.icon-16{
+.icon-16 {
   @apply icon w-16 h-16;
 }
 
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
-  @apply flex flex-col my-4 mx-3 p-4  rounded-lg border;
+  @apply flex flex-col my-4 mx-3 p-4 rounded-lg border;
+}
+
+/* General content stuff */
+
+/* p followed by p, mostly for content pages */
+p + p {
+  @apply mt-3;
 }
 
 .format-html {
-    
+}
+
+.blog-post-container {
 }
