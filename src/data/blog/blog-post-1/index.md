@@ -24,15 +24,15 @@ But what is it all about? I hope this blog post gives a brief outline for the cu
 
 Games like dnd are generally designed in a way to facilitate 3 main areas of play: Adventure, Combat and Roleplay.
 
-***Adventure***
+**_Adventure_**
 
 Describe how your characters can interact with the environment to solve challenges, puzzles and traverse the world around thenm.
 
-***Combat***
+**_Combat_**
 
 What happens when you meet people or creatures that only swords and spells can defeat?
 
-***Roleplay***
+**_Roleplay_**
 
 Interacting with other characters
 
@@ -52,7 +52,7 @@ I only provide both sides of the story because it better represents a real perso
 
 ---
 
-    But Matt! This game is imaginary, it provides escapism! 
+    But Matt! This game is imaginary, it provides escapism!
     Why would I want to bad at something!?
 
 ---
