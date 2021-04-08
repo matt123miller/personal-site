@@ -1,7 +1,8 @@
 /* purgecss start ignore */
-/* purgecss end ignore */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+/* purgecss end ignore */
+
 @import "tailwindcss/utilities";
 
 /* TODO: Not purging css during dev, allows adding new classes in browser. 
