@@ -21,23 +21,23 @@ const ContactInfo: React.FC = () => {
 
   return (
     <Cotnainer section>
-      <TitleSection title={"Contacts"} subtitle={"For more info contact me"} center />
+      <TitleSection title="Contact me" center />
 
-      <div className="w-full sm:w-1/3" key={"gh"}>
+      <div className="w-full sm:w-1/3" key="gh">
         <LinkCard link={links.github} center>
-          <InfoBlock icon={github} title={"Github"} content={"@matt123miller"} center/>
+          <InfoBlock icon={github} title="Github" content="@matt123miller" center/>
         </LinkCard>
       </div>
 
-      <div className="w-full sm:w-1/3"  key={"tw"}>
+      <div className="w-full sm:w-1/3"  key="tw">
         <LinkCard link={links.twitter} center>
-          <InfoBlock icon={twitter} title={"Twitter"} content={"@matt123miller"} center />
+          <InfoBlock icon={twitter} title="Twitter" content="@matt123miller" center />
         </LinkCard>
       </div>
 
-      <div className="w-full sm:w-1/3"  key={"email"}>
+      <div className="w-full sm:w-1/3"  key="email">
         <LinkCard link={`mailto:${links.email}`} center>
-          <InfoBlock icon={email} title={"Email"} content={links.email}  center/>
+          <InfoBlock icon={email} title="Email" content={links.email}  center/>
         </LinkCard>
       </div> 
     </Cotnainer>

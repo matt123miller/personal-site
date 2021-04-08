@@ -127,11 +127,11 @@ a {
 }
 
 .icon {
-  @apply flex items-center justify-center border rounded-full mb-2;
+  @apply flex items-center justify-center;
 }
 
-.icon-16 {
-  @apply icon w-16 h-16;
+.icon.icon-16 {
+  @apply w-16 h-16;
 }
 
 .link-card-content {

@@ -14,10 +14,10 @@ interface Props extends WrapperProps {
 
 const InfoBlock: React.FC<Props> = ({ icon, title, content, center }) => (
   <>
-    <span className="icon-16">
+    <span className="icon icon-16">
       {icon}
     </span>
-    <Wrapper center={center}>
+    <Wrapper className="mb-2" center={center}>
       <h3 className="text-md mt-1 font-semibold">{title}</h3>
       <p className="mt-1">{content}</p>
     </Wrapper>
