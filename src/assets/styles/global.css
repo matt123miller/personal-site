@@ -152,7 +152,7 @@ a {
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
-  @apply flex flex-col my-4 mx-3 rounded-lg border;
+  @apply flex flex-col mx-3 rounded-lg;
 }
 
 .blog-preview-image {

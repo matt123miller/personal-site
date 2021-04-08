@@ -14,7 +14,7 @@ interface Props extends WrapperProps {
 
 const InfoBlock: React.FC<Props> = ({ icon, title, content, center }) => (
   <>
-    <span className="icon icon-16">
+    <span className="icon mt-2">
       {icon}
     </span>
     <Wrapper className="mb-2" center={center}>
