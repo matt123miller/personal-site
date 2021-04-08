@@ -19,7 +19,8 @@ export const ToogleMainNav = styled.button<StyledProps>`
   outline: none !important;
 
   span {
-    ${tw`bg-indigo-500 inline-block w-6 h-px`};
+    ${tw`inline-block w-6 h-px`};
+    background-color: var(--dracula-purple);
     transition: 0.2s;
 
     &:first-child {
@@ -33,7 +34,8 @@ export const ToogleMainNav = styled.button<StyledProps>`
     }
 
     &:nth-child(2) {
-      ${tw`bg-teal-400 inline-block w-8 h-px`};
+      ${tw`inline-block w-8 h-px`};
+      background-color: var(--dracula-green);
 
       ${({ open }) => (open ? tw`opacity-0` : tw`opacity-1`)};
       transform: ${({ open }) => (open ? 'translate(20px)' : 'none')};

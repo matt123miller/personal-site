@@ -7,7 +7,6 @@
 /* TODO: Not purging css during dev, allows adding new classes in browser. 
 Move the purge end below the tailwind imports for release   */
 
-
 body {
   --dracula-background: #282a36;
   --dracula-foreground: #f8f8f2;
@@ -74,11 +73,95 @@ hr {
   @apply my-2;
 }
 
-ul, ol {
-  list-style: "✨" inside;
+ul {
+  list-style: none;
 }
 
+li::before {
+  content: "•";
+  color: var(--dracula-comment);
+  @apply mr-2;
+}
+
+/* Rainbow li bullets! */
+
+li:nth-child(7n+1)::before {
+  color: var(--dracula-red);
+}
+li:nth-child(7n+2)::before {
+  color: var(--dracula-orange);
+}
+li:nth-child(7n+3)::before {
+  color: var(--dracula-yellow);
+}
+li:nth-child(7n+4)::before {
+  color: var(--dracula-green);
+}
+li:nth-child(7n+5)::before {
+  color: var(--dracula-purple);
+}
+li:nth-child(7n+6)::before {
+  color: var(--dracula-cyan);
+}
+li:nth-child(7n)::before {
+  color: var(--dracula-pink);
+}
+
+
 /** Nav things */
+
+.logo-image {
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--dracula-pink);
+  @apply w-16 h-16 mr-3 rounded-full;
+}
+
+.logo-image:hover {
+  animation-name: lerp-colour, spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin { 
+  0%{
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 180deg;
+  }
+  100% {
+    rotate:360deg;
+  }
+}
+
+@keyframes lerp-colour {
+  0% {
+    border-color: var(--dracula-red);
+  }
+  15% {
+    border-color: var(--dracula-orange);
+  }
+  35% {
+    border-color: var(--dracula-yellow);
+  }
+  50% {
+    border-color: var(--dracula-green);
+  }
+  65% {
+    border-color: var(--dracula-cyan);
+  }
+  75% {
+    border-color: var(--dracula-purple);
+  }
+  88% {
+    border-color: var(--dracula-pink);
+  }
+  100% {
+    border-color: var(--dracula-red);
+  }
+}
 
 .main-nav-item {
   width: max-content;
@@ -95,7 +178,7 @@ a {
   color: var(--dracula-cyan);
 }
 
-.animated-link:not(.active){
+.animated-link:not(.active) {
   color: var(--dracula-cyan);
   position: relative;
   text-decoration: none;
@@ -172,6 +255,6 @@ p + p {
 
 .blog-post-container blockquote {
   background-color: var(--dracula-selection);
- 
+
   @apply italic my-2 p-5;
 }

@@ -11,9 +11,9 @@ export const Text = styled.h1`
 `;
 
 export const Image = styled.figure`
-  ${tw`w-16 h-16 mr-3 border border-teal-400 rounded-full`};
+  ${tw``};
 
   img {
-    ${tw`border-4 border-white rounded-full`};
+    ${tw``};
   }
 `;
