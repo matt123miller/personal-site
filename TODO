@@ -2,7 +2,7 @@ Readme:
   ✘ Add info about updating Sanity @cancelled(21-04-08 15:22)
 
 Blog Posts:
-  ✘ Tidy up my old dnd post @started(20-05-11 00:45) @cancelled(21-02-20 17:09) @wasted(40w5d17h24m26s)
+  ✘ Tidy up my old dnd post @cancelled(21-02-20 17:09) @wasted(40w5d17h24m26s)
   ☐ Migrate / rewrite my old witches house stuff if I can find it
   ☐ Some basic JS concept stuff
   ☐ What is an env file
@@ -23,7 +23,7 @@ Blog pages:
     ☐ Fix wide page issue
 
 Components:
-  ☐ Remove the syled components stuff, I just don't like it @started(21-04-08 15:26)
+  ☐ Remove the syled components stuff, I just don't like it
     ☐ The Timeline component needs doing
   ☐ Kent C Dodds has a good typescript functional component post. Move away from React.FC.
 
