@@ -52,6 +52,8 @@ footer {
   
 } */
 
+/* Typography  */
+
 h1 {
   @apply text-4xl;
 }
@@ -64,6 +66,17 @@ h3 {
 h4 {
   @apply text-lg;
 }
+
+/* Elements */
+
+hr {
+  border: 0;
+  height: 3px;
+  background: var(--dracula-comment);
+  background-image: linear-gradient(to right, var(--dracula-pink), var(--dracula-cyan), var(--dracula-pink));
+  @apply my-2;
+}
+
 
 /** Nav things */
 
@@ -134,13 +147,13 @@ a {
   @apply w-16 h-16;
 }
 
+/* General content stuff */
+
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
   @apply flex flex-col my-4 mx-3 rounded-lg border;
 }
-
-/* General content stuff */
 
 .blog-preview-image {
   border-top-left-radius: 0.5rem;
@@ -155,4 +168,10 @@ p + p {
 }
 
 .blog-post-container {
+}
+
+.blog-post-container blockquote {
+  background-color: var(--dracula-selection);
+ 
+  @apply italic my-2 p-5;
 }

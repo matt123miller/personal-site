@@ -8,8 +8,6 @@ tags: ['D&D']
 published: true
 ---
 
-![](./dice-box.jpeg)
-
 _You leave the cavern full of Kobolds behind, none the wiser to your presence. Creeping into the inner lair of the beast a treasure of information awaits you. The cave walls are covered in the glistening shapes of letters, snippets of the Draconic Prophecy. Arranged in a seemingly random pattern in the centre of the room are a series of tables. Upon each is something resembling chess boards, though formed of hexagonal shapes. Each board has wildly different pieces though. Most are foreign to you but with some investigationg a few grab your eyes, what you recognise as miniature figurines of yourselves. Suddenly an arrogant voice reverberates around the chamber._
 
 _"It would appear you've seen too much" drawls Dormenghast, the enormous green dragon that calls this place home._
@@ -42,7 +40,11 @@ People gathered around a table, one of them narrating a scene to the others, dic
 
 In real life we don't have magic, most of us don't risk our lives for magical trinkets, fight brutal humanoid cults in the wilderness or uncover ancient secrets in forgotten tombs. Well, some might.
 
-But the characters you control CAN accomplish those things and more and you need a way to adjudicate their success. That's where the dice and numbers come in. The most important is the d20 - a twenty sided dice, or icosahedron is you know your 3D shapes. The single most important concept of dnd as a game system is that you roll that d20 (lets hope for a good roll 🤞) and add or suctract some number. Is the total higher or lower than a predetermined number? That defines how successful your intended action was.
+But the characters you control CAN accomplish those things and more and you need a way to adjudicate their success. That's where the dice and numbers come in. 
+
+![](./dice-box.jpeg)
+
+The most important is the d20 - a twenty sided dice, or icosahedron is you know your 3D shapes. The single most important concept of dnd as a game system is that you roll that d20 (lets hope for a good roll 🤞) and add or suctract some number. Is the total higher or lower than a predetermined number? That defines how successful your intended action was.
 
 And what you add or subtract from that roll can be impacted by so many things. Players create a character, an avatar they control, and pick their character’s class, race, appearance, their background, personality traits they think would work for this concept and these details help refine what their character would be good at.
 
@@ -50,12 +52,11 @@ So for example Jess creates Lamarch, a burly half-orc just as likely to resolve 
 
 I only provide both sides of the story because it better represents a real person. We all have our skills and weaknesses.
 
----
 
-    But Matt! This game is imaginary, it provides escapism!
-    Why would I want to bad at something!?
 
----
+> But Matt! This game is imaginary, it provides escapism! Why would I want to bad at something!?
+
+
 
 I hear you, random internet stranger. Bear with me.
 Wait, this is fun?
@@ -74,6 +75,8 @@ In my experience dnd and similar games help me in other areas of life. The chall
 Roleplaying helps us manage our manage our problems in reality. Yes, the confrontation atop a moving train with an antagonist hell bent on collapsing a city was imaginary. But at the time it felt real, it was high pressure, it pushed you to adapt and overcome changing circumstances. Maybe that time you convinced the town mayor to throw in an extra 2000 gold when helping with their dragon problem allows you to pitch your new and creative ideas to your team or total strangers.
 
 Games like this make me want to create stories and the worlds they take place in. It helps me combat the perils of reality and my own mental health. Roleplaying as people with views different from myself helps me develop perspective. But most importantly it's a fun way to spend an evening with friends!
+
+---
 
 P.S.
 

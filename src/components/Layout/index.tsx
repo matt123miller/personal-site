@@ -26,7 +26,7 @@ const Layout: React.FC<Props> = ({ children }) => {
     <>
       <AnimatePresence exitBeforeEnter>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="flex flex-col main-content-container">
+        <main className="flex flex-col leading-relaxed main-content-container">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
