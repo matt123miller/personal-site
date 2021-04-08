@@ -1,0 +1,261 @@
+/* purgecss start ignore */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+/* purgecss end ignore */
+
+@import "tailwindcss/utilities";
+
+/* TODO: Not purging css during dev, allows adding new classes in browser. 
+Move the purge end below the tailwind imports for release   */
+
+body {
+  --dracula-background: #282a36;
+  --dracula-foreground: #f8f8f2;
+  --dracula-selection: #44475a;
+  --dracula-comment: #6272a4;
+  --dracula-red: #ff5555;
+  --dracula-orange: #ffb86c;
+  --dracula-yellow: #f1fa8c;
+  --dracula-green: #50fa7b;
+  --dracula-purple: #bd93f9;
+  --dracula-cyan: #8be9fd;
+  --dracula-pink: #ff79c6;
+}
+
+body {
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+  user-select: var(--dracula-selection);
+}
+
+header {
+  min-height: 10vh;
+  background-color: var(--dracula-selection);
+  border-bottom-color: var(--dracula-comment);
+  color: var(--dracula-cyan);
+}
+
+main {
+  min-height: 75vh;
+}
+
+footer {
+  min-height: 10vh;
+  border-top: 2px solid var(--dracula-selection);
+  @apply py-4;
+}
+
+/* @layer base {
+  
+} */
+
+/* Typography  */
+
+h1 {
+  @apply text-4xl;
+}
+h2 {
+  @apply text-2xl;
+}
+h3 {
+  @apply text-xl;
+}
+h4 {
+  @apply text-lg;
+}
+
+/* Elements */
+
+hr {
+  border: 0;
+  height: 3px;
+  background: var(--dracula-comment);
+  background-image: linear-gradient(to right, var(--dracula-pink), var(--dracula-cyan), var(--dracula-pink));
+  @apply my-2;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: "•";
+  color: var(--dracula-comment);
+  @apply mr-2;
+}
+
+/* Rainbow li bullets! */
+
+li:nth-child(7n+1)::before {
+  color: var(--dracula-red);
+}
+li:nth-child(7n+2)::before {
+  color: var(--dracula-orange);
+}
+li:nth-child(7n+3)::before {
+  color: var(--dracula-yellow);
+}
+li:nth-child(7n+4)::before {
+  color: var(--dracula-green);
+}
+li:nth-child(7n+5)::before {
+  color: var(--dracula-purple);
+}
+li:nth-child(7n+6)::before {
+  color: var(--dracula-cyan);
+}
+li:nth-child(7n)::before {
+  color: var(--dracula-pink);
+}
+
+
+/** Nav things */
+
+.logo-image {
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--dracula-pink);
+  @apply w-16 h-16 mr-3 rounded-full;
+}
+
+.logo-image:hover {
+  animation-name: lerp-colour, spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin { 
+  0%{
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 180deg;
+  }
+  100% {
+    rotate:360deg;
+  }
+}
+
+@keyframes lerp-colour {
+  0% {
+    border-color: var(--dracula-red);
+  }
+  15% {
+    border-color: var(--dracula-orange);
+  }
+  35% {
+    border-color: var(--dracula-yellow);
+  }
+  50% {
+    border-color: var(--dracula-green);
+  }
+  65% {
+    border-color: var(--dracula-cyan);
+  }
+  75% {
+    border-color: var(--dracula-purple);
+  }
+  88% {
+    border-color: var(--dracula-pink);
+  }
+  100% {
+    border-color: var(--dracula-red);
+  }
+}
+
+.main-nav-item {
+  width: max-content;
+  @apply relative ml-3 pb-1;
+}
+
+.main-nav-item.active {
+  border-bottom: 2px solid var(--dracula-cyan);
+}
+
+/* hover link effect */
+
+a {
+  color: var(--dracula-cyan);
+}
+
+.animated-link:not(.active) {
+  color: var(--dracula-cyan);
+  position: relative;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.animated-link:hover:not(.active) {
+  transition: right 0.2s cubic-bezier(0, 0.5, 0, 1), border-color 0.2s ease-out;
+}
+.animated-link:not(.active)::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: var(--dracula-cyan);
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.animated-link:not(.active):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/** Icon stuff */
+
+.separator-icon {
+  @apply relative w-2 h-8 mb-6 -mt-2;
+}
+
+.separator-icon::before {
+  content: "";
+  background-color: var(--dracula-cyan);
+  @apply h-full w-px absolute left-0;
+}
+
+.separator-icon::after {
+  content: "";
+  background-color: var(--dracula-pink);
+  @apply h-6 w-px absolute ml-1;
+}
+
+.icon {
+  @apply flex items-center justify-center;
+}
+
+.icon.icon-16 {
+  @apply w-16 h-16;
+}
+
+/* General content stuff */
+
+.link-card-content {
+  background-color: var(--dracula-selection);
+  border: 1px solid var(--dracula-cyan);
+  @apply flex flex-col mx-3 rounded-lg;
+}
+
+.blog-preview-image {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+/* p followed by p, mostly for content pages */
+p + p {
+  @apply mt-3;
+}
+
+.format-html {
+}
+
+.blog-post-container {
+}
+
+.blog-post-container blockquote {
+  background-color: var(--dracula-selection);
+
+  @apply italic my-2 p-5;
+}
