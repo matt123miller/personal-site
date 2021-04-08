@@ -40,7 +40,7 @@ People gathered around a table, one of them narrating a scene to the others, dic
 
 In real life we don't have magic, most of us don't risk our lives for magical trinkets, fight brutal humanoid cults in the wilderness or uncover ancient secrets in forgotten tombs. Well, some might.
 
-But the characters you control CAN accomplish those things and more and you need a way to adjudicate their success. That's where the dice and numbers come in. 
+But the characters you control CAN accomplish those things and more and you need a way to adjudicate their success. That's where the dice and numbers come in.
 
 ![](./dice-box.jpeg)
 
@@ -52,11 +52,7 @@ So for example Jess creates Lamarch, a burly half-orc just as likely to resolve 
 
 I only provide both sides of the story because it better represents a real person. We all have our skills and weaknesses.
 
-
-
 > But Matt! This game is imaginary, it provides escapism! Why would I want to bad at something!?
-
-
 
 I hear you, random internet stranger. Bear with me.
 Wait, this is fun?

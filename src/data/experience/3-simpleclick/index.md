@@ -6,7 +6,7 @@ startDate: 'Mar 2019'
 endDate: 'Ongoing'
 ---
 
-I currently work as a fullstack developer making websites and other web powered services for a range of local and national clients. My work focuses on improving and maintaining our CMS product, Doddle. This includes working on core modules that all Doddle sites share and client specific modules for more bespoke functionality. 
+I currently work as a fullstack developer making websites and other web powered services for a range of local and national clients. My work focuses on improving and maintaining our CMS product, Doddle. This includes working on core modules that all Doddle sites share and client specific modules for more bespoke functionality.
 
 Some recent client projects include:
 

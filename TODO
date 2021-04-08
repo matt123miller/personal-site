@@ -9,6 +9,10 @@ Blog Posts:
   ☐ The ordeal of installing imagemagick on my system - https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux
   ☐ gitkraken and windows terminal alt + t
 
+Template tidy up:
+  ☐ Remove styled components
+  ☐ Remove skills, sergivse, testimonials and all that junk
+
 Blog pages:
   ✔ blog snippets?. @done(21-04-08 15:23)
   ☐ Blog images CSS
