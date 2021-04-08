@@ -36,7 +36,7 @@ header {
 }
 
 main {
-  min-height: 70vh;
+  min-height: 75vh;
 }
 
 footer {
@@ -95,16 +95,16 @@ a {
   color: var(--dracula-cyan);
 }
 
-.animated-link {
+.animated-link:not(.active){
   color: var(--dracula-cyan);
   position: relative;
   text-decoration: none;
   transition: 0.5s;
 }
-.animated-link:hover {
+.animated-link:hover:not(.active) {
   transition: right 0.2s cubic-bezier(0, 0.5, 0, 1), border-color 0.2s ease-out;
 }
-.animated-link::after {
+.animated-link:not(.active)::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -116,7 +116,7 @@ a {
   transform: scaleX(0);
   transform-origin: right;
 }
-.animated-link:hover::after {
+.animated-link:not(.active):hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
