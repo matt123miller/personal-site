@@ -4,14 +4,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* TODO: Not purging css during dev, allows adding new classes in browser   */
+/* TODO: Not purging css during dev, allows adding new classes in browser. 
+Move the purge end below the tailwind imports for release   */
 
 
 body {
-  --accent-colour: #4fd1c5;
-  --charcoal: #333333;
-  --off-white: #f7fafc;
-
   --dracula-background: #282a36;
   --dracula-foreground: #f8f8f2;
   --dracula-selection: #44475a;
@@ -77,6 +74,9 @@ hr {
   @apply my-2;
 }
 
+ul, ol {
+  list-style: "✨" inside;
+}
 
 /** Nav things */
 

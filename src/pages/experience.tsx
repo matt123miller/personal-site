@@ -5,12 +5,12 @@ import SEO from 'components/SEO';
 import Experience from 'components/Experience';
 import Education from 'components/Education';
 
-const ResumePage: React.FC = () => (
+const MyWorkPage: React.FC = () => (
   <Layout>
-    <SEO title="Resume" />
+    <SEO title="My Work" />
     <Experience />
     <Education />
   </Layout>
 );
 
-export default ResumePage;
+export default MyWorkPage;
