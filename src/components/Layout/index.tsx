@@ -23,22 +23,20 @@ const Layout: React.FC<Props> = ({ children }) => {
   `);
 
   return (
-    <>
-      <AnimatePresence exitBeforeEnter>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <main className="flex flex-col leading-relaxed main-content-container">
-          <motion.div
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ delay: 0.2 }}
-          >
-            {children}
-          </motion.div>
-        </main>
-        <Footer />
-      </AnimatePresence>
-    </>
+    <AnimatePresence exitBeforeEnter>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <main className="flex flex-col main-content-container">
+        <motion.div
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ delay: 0.2 }}
+        >
+          {children}
+        </motion.div>
+      </main>
+      <Footer />
+    </AnimatePresence>
   );
 };
 

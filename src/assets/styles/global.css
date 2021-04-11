@@ -23,24 +23,38 @@ body {
 }
 
 body {
-  background-color: var(--dracula-background);
+  font-size: 100%;
   color: var(--dracula-foreground);
+  
+  background-color: var(--dracula-background);
   user-select: var(--dracula-selection);
 }
 
-header {
-  min-height: 10vh;
+/* 
+#gatsby-focus-wrapper is effectively the body of Gatsby.
+Everything ends up inside body>div#___gatsby>div#gatsby-focus-wrapper 
+
+Keeping footer at the bottom using technique from here https://moderncss.dev/keep-the-footer-at-the-bottom-flexbox-vs-grid/
+*/
+div#gatsby-focus-wrapper {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+div#gatsby-focus-wrapper > header {
   background-color: var(--dracula-selection);
   border-bottom-color: var(--dracula-comment);
   color: var(--dracula-cyan);
 }
 
-main {
-  min-height: 75vh;
+div#gatsby-focus-wrapper > main {
+
 }
 
-footer {
-  min-height: 10vh;
+div#gatsby-focus-wrapper > footer {
+  margin-top: auto;
   border-top: 2px solid var(--dracula-selection);
   @apply py-4;
 }
@@ -170,7 +184,7 @@ li:nth-child(7n)::before {
 }
 
 .main-nav-item.active {
-  border-bottom: 2px solid var(--dracula-cyan);
+  border-bottom: 2px solid var(--dracula-pink);
 }
 
 /* hover link effect */
@@ -213,13 +227,13 @@ a {
 
 .separator-icon::before {
   content: "";
-  background-color: var(--dracula-cyan);
+  background-color: var(--dracula-green);
   @apply h-full w-px absolute left-0;
 }
 
 .separator-icon::after {
   content: "";
-  background-color: var(--dracula-pink);
+  background-color: var(--dracula-purple);
   @apply h-6 w-px absolute ml-1;
 }
 
@@ -233,6 +247,10 @@ a {
 
 /* General content stuff */
 
+li, p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
 
 .link-card-content {
   background-color: var(--dracula-selection);
