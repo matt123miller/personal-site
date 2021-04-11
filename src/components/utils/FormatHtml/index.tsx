@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 
 interface Props {
-  content: any;
+  content: string;
 }
 
 const FormatHtml: React.FC<Props> = ({ content }) => (

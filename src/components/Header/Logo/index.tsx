@@ -32,7 +32,7 @@ const Logo: React.FC = () => {
       <figure className="logo-image">
         <Img className="border-1 rounded-full" fluid={logoImage} alt={logoTitle} />
       </figure>
-      <h1 className="text-lg animated-link">{logoTitle}</h1>
+      <h1 className="text-lg animated-link text-xl">Matt Miller</h1>
     </Styled.Logo>
   );
 };

@@ -36,7 +36,7 @@ const MainNav: React.FC = () => {
         {
           mainNavItems.map((item, index) => (
             <Link 
-              className={'main-nav-item animated-link'}
+              className={'main-nav-item animated-link text-xl'}
               key={`nav-item-${index}`}
               to={item.slug}
               activeClassName="active"
@@ -47,6 +47,7 @@ const MainNav: React.FC = () => {
         }
       </Styled.MainNav>
       <Styled.ToogleMainNav open={open} onClick={() => setOpen(!open)}>
+        {/* Each span is styled in the styled component. Just ignore it. */}
         <span />
         <span />
         <span />
@@ -56,27 +57,3 @@ const MainNav: React.FC = () => {
 };
 
 export default MainNav;
-
-/**
- export const MainNavItem = motion.custom(styled(Link)`
-  ${tw`relative text-indigo-900 border-b border-transparent hover:text-indigo-900 ml-0 sm:ml-8 mt-3 sm:mt-0`};
-  width: max-content;
-
-  &.active {
-    ${tw`border-teal-400`};
-  }
-
-  &:before {
-    ${tw`absolute w-full bg-teal-400 h-px left-0 invisible`};
-    content: '';
-    bottom: -1px;
-    transform: scaleX(0);
-    transition: 0.2s;
-  }
-
-  &:hover:before {
-    ${tw`visible`};
-    transform: scaleX(1);
-  }
-`);
- */

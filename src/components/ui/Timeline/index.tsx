@@ -17,9 +17,7 @@ const Timeline: React.FC<Props> = ({ title, subtitle, content, startDate, endDat
       <h2 className="font-semibold">{title}</h2>
       <hr className="hidden sm:block sm:mr-4" />
       <p>{subtitle}</p>
-      <p>
-        {startDate} - {endDate}
-      </p>
+      <p>{startDate} - {endDate}</p>
       <hr className="block sm:hidden sm:mr-4"/>
     </div>
     <div className="w-full sm:w-2/3 mt-4 sm:mt-0">{content}</div>

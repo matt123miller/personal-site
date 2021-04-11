@@ -10,7 +10,7 @@ import FormatHtml from 'components/utils/FormatHtml';
 
 
 interface Post {
-  html: React.ReactNode;
+  html: string;
   fields: {
     slug: string;
   };
