@@ -8,7 +8,6 @@ import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
 import FormatHtml from 'components/utils/FormatHtml';
 
-import * as Styled from './styles';
 
 interface Post {
   html: React.ReactNode;
@@ -42,7 +41,7 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
       <Container section>
         <TitleSection title={post.frontmatter.title} />
         <FormatHtml content={post.html} />
-        <Styled.Links>
+        <div className="w-full flex justify-between mt-10">
           <span>
             {previous && (
               <Link to={previous.fields.slug} rel="previous">
@@ -57,7 +56,7 @@ const BlogPost: React.FC<Props> = ({ data, pageContext }) => {
               </Link>
             )}
           </span>
-        </Styled.Links>
+        </div>
       </Container>
     </Layout>
   );

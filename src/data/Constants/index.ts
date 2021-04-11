@@ -10,4 +10,4 @@ export const links = {
   email,
 }
 
-export const blogTags = ['Code', 'JS', 'D&D', 'Mini Painting'];
+export const blogTags = ['Code', 'JS', 'CSS', 'Accessibility', 'D&D', 'Mini Painting'];

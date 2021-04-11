@@ -20,5 +20,5 @@ export const Point = styled.span`
   background-color: var(--dracula-pink);
   border-color: var(--dracula-cyan);
   left: -6px;
-  top: 23px;
+  top: 30px;
 `;
