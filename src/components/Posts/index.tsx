@@ -1,8 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import Link from 'gatsby-link';
-import { motion } from 'framer-motion';
 
 import Container from 'components/ui/Container';
 import TitleSection from 'components/ui/TitleSection';
@@ -91,8 +89,7 @@ const Posts: React.FC = () => {
             } = item.node;
 
             return (
-              <div className="w-full sm:w-1/2 p-3" key={id}>
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
+              <div className="w-full sm:w-1/2 p-3" key={id}> 
                   <LinkCard link={slug} internal center>
                     <figure className="w-full">
                       <Img className="blog-preview-image" fluid={cover.childImageSharp.fluid} alt={title} />
@@ -104,10 +101,9 @@ const Posts: React.FC = () => {
                     <div className="p-4 pt-2 mt-auto">
                       {tags.map((item) => (
                         <span className="text-xs rounded-full px-2 py-1 mr-2" key={item}>{item}</span>
-                      ))}
+                        ))}
                     </div>
                   </LinkCard>
-                </motion.div>
               </div>
             );
           })

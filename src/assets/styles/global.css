@@ -233,10 +233,16 @@ a {
 
 /* General content stuff */
 
+
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
+  transition: 0.15s linear;
   @apply flex flex-col mx-3 rounded-lg;
+}
+
+.link-card-content:hover, .link-card-content:active {
+  transform: scale(1.05);
 }
 
 .blog-preview-image {

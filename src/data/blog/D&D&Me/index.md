@@ -3,7 +3,7 @@ category: 'blog'
 cover: './dice-box.jpeg'
 title: 'D&D&Me'
 description: 'What D&D means to me and why it should matter to you'
-date: '2020-05-22'
+date: '2021-04-21'
 tags: ['D&D']
 published: true
 ---

@@ -13,7 +13,7 @@ const LinkCard: React.FC<Props> = ({ link, children, internal, center }) => {
   if (internal) {
     return(
       <Link to={link}>
-        <div className={`link-card-content ${center ? 'items-center' : ''}`} >
+        <div className={`link-card-content card-hover ${center ? 'items-center' : ''}`} >
           {children}
         </div>
       </Link>
@@ -22,7 +22,7 @@ const LinkCard: React.FC<Props> = ({ link, children, internal, center }) => {
   else {
     return (
       <a className="mr-2" href={link} rel="noreferrer noopener" target="_blank">
-        <div className={`link-card-content ${center ? 'items-center' : ''}`} >
+        <div className={`link-card-content card-hover ${center ? 'items-center' : ''}`} >
           {children}
         </div>
       </a>
