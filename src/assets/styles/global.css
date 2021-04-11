@@ -199,7 +199,7 @@ a {
   text-decoration: none;
   transition: 0.5s;
 }
-.animated-link:hover:not(.active) {
+.animated-link:hover:not(.active), .animated-link:focus-within:not(.active) {
   transition: right 0.2s cubic-bezier(0, 0.5, 0, 1), border-color 0.2s ease-out;
 }
 .animated-link:not(.active)::after {
@@ -214,7 +214,7 @@ a {
   transform: scaleX(0);
   transform-origin: right;
 }
-.animated-link:not(.active):hover::after {
+.animated-link:not(.active):hover::after, .animated-link:not(.active):focus-within::after {
   transform: scaleX(1);
   transform-origin: left;
 }
@@ -259,7 +259,7 @@ li, p {
   @apply flex flex-col mx-3 rounded-lg;
 }
 
-.link-card-content:hover, .link-card-content:active {
+.link-card-content:hover, .link-card-content:active,  .link-card-content:focus-within {
   transform: scale(1.05);
 }
 

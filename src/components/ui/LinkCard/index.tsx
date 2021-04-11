@@ -1,31 +1,33 @@
 import React, { ReactChildren } from 'react';
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 
 interface Props {
   link: string;
   internal?: Boolean;
   center?: Boolean;
+  index?: number;
 }
 
-const LinkCard: React.FC<Props> = ({ link, children, internal, center }) => {
+const LinkCard: React.FC<Props> = ({ link, children, internal, index, center }) => {
 
- 
+
   if (internal) {
-    return(
-      <Link to={link}>
-        <div className={`link-card-content card-hover ${center ? 'items-center' : ''}`} >
+    return (
+      <div className={`link-card-content card-hover ${center ? 'items-center' : ''}`} >
+        <Link to={link}>
           {children}
-        </div>
-      </Link>
+        </Link>
+      </div>
     );
   }
   else {
+
     return (
-      <a className="mr-2" href={link} rel="noreferrer noopener" target="_blank">
-        <div className={`link-card-content card-hover ${center ? 'items-center' : ''}`} >
+      <div className={`link-card-content card-hover mr-2 ${center ? 'items-center' : ''}`} >
+        <a href={link} rel="noreferrer noopener" target="_blank">
           {children}
-        </div>
-      </a>
+        </a>
+      </div>
     );
   }
 }
