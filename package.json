@@ -1,5 +1,5 @@
 {
-  "name": "personal-site",
+  "name": "matt123miller.github.io",
   "private": true,
   "description": "My personal website, built with Gatsby",
   "version": "0.1.0",
@@ -62,14 +62,14 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matt123miller/personal-site"
+    "url": "https://github.com/matt123miller/matt123miller.github.io"
   },
   "bugs": {
-    "url": "https://github.com/matt123miller/personal-site/issues"
+    "url": "https://github.com/matt123miller/matt123miller.github.io/issues"
   }
 }

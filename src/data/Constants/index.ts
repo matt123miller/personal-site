@@ -1,5 +1,5 @@
 const github = "https://github.com/matt123miller";
-const siteRepo = `${github}/personal-site`
+const siteRepo = `${github}/matt123miller.github.io`
 const twitter = "https://twitter.com/matt123miller";
 const email = "matt123miller@hotmail.co.uk";
 
