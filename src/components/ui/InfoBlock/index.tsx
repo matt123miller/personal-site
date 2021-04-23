@@ -8,7 +8,7 @@ import { FontAwesomeIconProps } from '@fortawesome/react-fontawesome';
 interface Props extends WrapperProps {
   title: string;
   // @ts-ignore 'Icon' refers to a value, but is being used as a type here. Did you mean 'typeof Icon'?"
-  icon: Icon; 
+  icon?: Icon; 
   content?: React.ReactNode;
   squashContent?: Boolean;
 }
