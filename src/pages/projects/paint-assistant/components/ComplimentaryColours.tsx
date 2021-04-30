@@ -3,7 +3,11 @@ import React, { useState, Fragment } from 'react';
 import Paint from './Paint';
 import paintData from '../data';
 
-export default function ComplimentaryColours(props) {
+type Props = {
+  chosenColour: string
+}
+
+export default function ComplimentaryColours(props: Props) {
   const { chosenColour } = props;
 
   // set to the opposite of our chosen colour

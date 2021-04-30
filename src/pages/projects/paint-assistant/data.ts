@@ -1,3 +1,16 @@
+type PaintData = {
+  name: string,
+  svg: string,
+  hexCode: string,
+  filePath: string,
+  rgb: {
+    r: Number,
+    g: Number,
+    b: Number
+  }
+};
+
+
 const rawData = [
   {
     name: 'Nuln Oil',
@@ -1969,8 +1982,12 @@ const rawData = [
     hexCode: '#D3D0CF',
     filePath: './paintimages/gw/Wrack White.svg'
   }
-].map((d) => {
+];
+
+//@ts-ignore
+const formattedData: Array<PaintData> = rawData.map((d) => {
   // Add an rgb field to each record
+  //@ts-ignore
   d.rgb = {
     r: parseInt(d.hexCode.slice(1, 3), 16),
     g: parseInt(d.hexCode.slice(3, 5), 16),
@@ -1980,4 +1997,4 @@ const rawData = [
   return d;
 });
 
-export default rawData;
+export default formattedData ;

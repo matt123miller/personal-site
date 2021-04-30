@@ -1,5 +1,8 @@
 import React, { useState, Fragment } from 'react';
-import { Paint, FilterButton, ComplimentaryColours } from './index';
+
+import Paint from './Paint';
+import FilterButton from './FilterButton';
+import ComplimentaryColours from './ComplimentaryColours';
 
 export default PaintsList;
 
@@ -19,15 +22,20 @@ const sortFunctions = {
   LightToDark: LightToDark
 };
 
+// type Props = {
+//   paintData: 
+// }
+
 function PaintsList(props) {
   const { paintData } = props;
 
-  const [chosenColour, setColour] = useState(null);
+  const [chosenColour, setColour] = useState('');
   const [selectedSorts, updateSort] = useState(sortOptions);
   const [searchRegex, updateSearchText] = useState(RegExp(''));
 
   const sortChanged = (e) => {
-    const isChecked = (id) => document.getElementById(id)?.checked;
+
+    const isChecked = (id:string) => document.getElementById(id)?.checked;
     const updatedValues = {
       AlphabeticalAsc: isChecked('AlphabeticalAsc'),
       AlphabeticalDesc: isChecked('AlphabeticalDesc'),

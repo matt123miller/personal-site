@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Layout from 'components/Layout';
 import SEO from 'components/SEO';
 
-import { PaintsList } from './components';
+import PaintsList from './components/PaintsList';
 import paintData from './data';
 
 import './Paint.css';
