@@ -19,10 +19,12 @@ export default function PaintMixer() {
         <SEO title="About Me" />
             <header>
                 <h1>Painting Colour Assistant</h1>
-                {/* <ColourPicker chosenColour={chosenColour} setColour={setColour} /> */}
+                {/* 
+                <ColourPicker chosenColour={chosenColour} setColour={setColour} /> 
                 <div className="colour-details-container m3">
-                    {/* <ComplimentaryColours  className="centre" chosenColour={chosenColour} /> */}
+                     <ComplimentaryColours  className="centre" chosenColour={chosenColour} /> 
                 </div>
+                */}
             </header>
             <hr />
             <main>

@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { Paint, ThemePicker } from './index';
-
+import FilterButton from './FilterButton';
 
 export default PaintsList;
 
@@ -29,7 +29,7 @@ function PaintsList(props) {
 
 
 
-  const isChecked = (id) => { console.log(id); return document.getElementById(id)?.checked; }
+  const isChecked = (id) => document.getElementById(id)?.checked;
 
   const sortChanged = (e) => {
     const updatedValues = {
@@ -75,7 +75,7 @@ function PaintsList(props) {
         <FilterButton title="A to Z" filterKey="AlphabeticalAsc" isActive={selectedFilters.AlphabeticalDesc} sortChanged={sortChanged}/>
         <FilterButton title="Z to A" filterKey="AlphabeticalDesc" isActive={selectedFilters.AlphabeticalAsc} sortChanged={sortChanged}/>
         <FilterButton title="Light to Dark" filterKey="LightToDark" isActive={selectedFilters.LightToDark} sortChanged={sortChanged}/>
-        <FilterButton title="DarkToLight" filterKey="DarkToLight" isActive={selectedFilters.DarkToLight} sortChanged={sortChanged}/>
+        <FilterButton title="Dark to Light" filterKey="DarkToLight" isActive={selectedFilters.DarkToLight} sortChanged={sortChanged}/>
 
       </div>
 
@@ -92,17 +92,6 @@ function PaintsList(props) {
     </div>
   )
 }
-
-function FilterButton({filterKey, title, isActive, sortChanged}) {
-  console.log(filterKey, title);
-  return <>
-    <span className={`filter-button ${isActive && 'active'}`}>
-      <input type="radio" name="SortGroup" id={filterKey} onChange={sortChanged} />
-      <label htmlFor={filterKey}>{title}</label>
-    </span>
-  </>;
-}
-
 
 function AlphabeticalAsc(data) {
   return data.sort((a, b) => a.name > b.name);
