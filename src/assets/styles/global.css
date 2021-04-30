@@ -9,6 +9,9 @@
 Move the purge end below the tailwind imports for release   */
 
 body {
+
+  --default-animation-transition: 0.15s linear;
+  /* Colours */
   --dracula-background: #282a36;
   --dracula-foreground: #f8f8f2;
   --dracula-selection: #44475a;
@@ -96,6 +99,20 @@ li::before {
   content: "•";
   color: var(--dracula-comment);
   @apply mr-2;
+}
+
+button {
+  border-radius: 5px;
+  border: var(--dracula-orange) 2px solid;
+  padding: 0.5rem 1rem;
+}
+
+button:active, button.active {
+  border: var(--dracula-purple) 2px solid;
+}
+
+button + button {
+  margin-left: 2rem;
 }
 
 /* Rainbow li bullets! */
@@ -255,7 +272,7 @@ li, p {
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
-  transition: 0.15s linear;
+  transition: var(--default-animation-transition);
   @apply flex flex-col mx-3 rounded-lg;
 }
 

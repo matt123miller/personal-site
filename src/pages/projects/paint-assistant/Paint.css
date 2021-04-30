@@ -1,0 +1,140 @@
+main {
+  --border-radius: 0.5rem;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+    body {
+        
+    }
+} */
+
+.background-transition {
+  transition: all 0.5s;
+}
+
+body {
+  text-align: center;
+  /* TODO: make sure transition doesn't happen on page load  */
+}
+
+.paint-search {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--dracula-background);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filters {
+ width: 100%;
+}
+/* 
+.filters > :not(:first-child) {
+  margin-left: 2rem;
+} */
+
+.filters input[type="radio"] {
+  display: none;
+}
+
+
+/* 
+ * Complimentary colours
+
+
+ Really should use flex column
+ Do that next time
+ */
+
+.complimentary-colour-container {
+  display: grid;
+  grid-template-areas: "chosen centre complimentary";
+}
+
+.complimentary-colour-container > .chosen {
+  grid-area: "chosen";
+  max-width: 150px;
+  justify-self: right;
+  margin-right: 3rem;
+}
+
+.complimentary-colour-container > .centre {
+  grid-area: "centre";
+}
+
+.complimentary-colour-container > .complimentary {
+  grid-area: "complimentary";
+  max-width: 150px;
+}
+
+
+
+/* 
+ * All the paint stuff
+ */
+
+
+ul {
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style: none;
+  transition: var(--default-animation-transition);
+}
+li::before {
+  content: "";
+  color: var(--dracula-comment);
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+.paint-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+
+  justify-items: center;
+}
+
+.paint-list > li {
+  grid-column: span 1;
+  grid-row: span 1;
+  min-width: 150px;
+}
+
+.paint-container {
+  max-height: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 6rem;
+  border: var(--dracula-foreground) solid 1px;
+  border-radius: 0.5rem;
+}
+
+.paint-container > * {
+  padding: 0 0.5rem;
+}
+
+.paint-pot {
+  width: 100%;
+}
+
+.paint-name {
+  font-size: large;
+}
+
+.paint-code {
+  margin-bottom: 1rem;
+}
+
+.colour-swatch {
+  min-height: 100px;
+  height: 100%;
+  border-radius: var(--border-radius);
+  margin-top: 1.5rem;
+  border: 1px solid black;
+}
