@@ -1,3 +1,5 @@
+/// <reference path='../types.d.ts' />
+
 import React from 'react';
 
 export default function ColourPicker(props) {

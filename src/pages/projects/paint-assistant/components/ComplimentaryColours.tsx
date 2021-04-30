@@ -1,3 +1,5 @@
+/// <reference path='../types.d.ts' />
+
 import React, { useState, Fragment } from 'react';
 
 import Paint from './Paint';

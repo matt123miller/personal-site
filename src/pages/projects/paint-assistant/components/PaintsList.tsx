@@ -1,3 +1,5 @@
+/// <reference path='../types.d.ts' />
+
 import React, { useState, Fragment } from 'react';
 
 import Paint from './Paint';
@@ -22,11 +24,11 @@ const sortFunctions = {
   LightToDark: LightToDark
 };
 
-// type Props = {
-//   paintData: 
-// }
+type Props = {
+  paintData: PaintData
+}
 
-function PaintsList(props) {
+function PaintsList(props: Props) {
   const { paintData } = props;
 
   const [chosenColour, setColour] = useState('');
@@ -54,6 +56,7 @@ function PaintsList(props) {
     updateSearchText(regex);
   };
 
+  // @ts-ignore
   const requestedSort = Object.keys(selectedSorts).find((f) => selectedSorts[f]);
 
   // when filters are added do those first, then sort the results
@@ -61,6 +64,7 @@ function PaintsList(props) {
   let filteredData = paintData.filter((p) => searchRegex.test(p.name));
 
   if (requestedSort) {
+    // @ts-ignore
     filteredData = sortFunctions[requestedSort](filteredData);
   }
 
@@ -121,18 +125,18 @@ function PaintsList(props) {
   );
 }
 
-function AlphabeticalAsc(data) {
-  return data.sort((a, b) => a.name > b.name);
+function AlphabeticalAsc(data: PaintData) : PaintData {
+  return data.sort((a, b) => a.name > b.name ? -1 : 1);
 }
 
-function AlphabeticalDesc(data) {
-  return data.sort((a, b) => a.name < b.name);
+function AlphabeticalDesc(data: PaintData) : PaintData {
+  return data.sort((a, b) => a.name < b.name ? 1 : -1);
 }
 
-function DarkToLight(data) {
-  return data.sort((a, b) => a.hexCode > b.hexCode);
+function DarkToLight(data: PaintData) : PaintData {
+  return data.sort((a, b) => a.hexCode > b.hexCode ? -1 : 1);
 }
 
-function LightToDark(data) {
-  return data.sort((a, b) => a.hexCode < b.hexCode);
+function LightToDark(data: PaintData) : PaintData {
+  return data.sort((a, b) => a.hexCode < b.hexCode ? 1 : -1);
 }

@@ -1,17 +1,7 @@
-type PaintData = {
-  name: string,
-  svg: string,
-  hexCode: string,
-  filePath: string,
-  rgb: {
-    r: Number,
-    g: Number,
-    b: Number
-  }
-};
+/// <reference path='./types.d.ts' />
 
 
-const rawData = [
+const rawData: Array<PaintData> = [
   {
     name: 'Nuln Oil',
     svg: 'https://www.games-workshop.com/resources/catalog/product/600x620/99189953017_shadeNulnOil.svg',
@@ -1984,10 +1974,10 @@ const rawData = [
   }
 ];
 
-//@ts-ignore
-const formattedData: Array<PaintData> = rawData.map((d) => {
+
+const formattedData = rawData.map((d) => {
   // Add an rgb field to each record
-  //@ts-ignore
+
   d.rgb = {
     r: parseInt(d.hexCode.slice(1, 3), 16),
     g: parseInt(d.hexCode.slice(3, 5), 16),
