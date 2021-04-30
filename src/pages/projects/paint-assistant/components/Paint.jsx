@@ -7,7 +7,7 @@ export default function Paint(props) {
 
     return (
         <div
-            className={`paint-container`}
+            className="paint-container"
             style={{ backgroundColor: hexCode }}
             onClick={e => onPaintClick(hexCode)}>
 

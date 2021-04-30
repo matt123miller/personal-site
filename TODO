@@ -1,16 +1,16 @@
 Readme:
-  ✘ Add info about updating Sanity @cancelled(21-04-08 15:22)
 
 Blog Posts:
   ✘ Tidy up my old dnd post @cancelled(21-02-20 17:09) @wasted(40w5d17h24m26s)
   ☐ Migrate / rewrite my old witches house stuff if I can find it
   ☐ Some basic JS concept stuff
   ☐ What is an env file
-  ☐ The ordeal of installing imagemagick on my system - https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux
+  ✘ The ordeal of installing imagemagick on my system - https://linuxconfig.org/how-to-install-imagemagick-7-on-ubuntu-18-04-linux @cancelled(21-04-30 13:51)
   ☐ gitkraken and windows terminal alt + t
 
 Template tidy up:
   ☐ Remove styled components
+    ☐ The Timeline component needs doing 
   ☐ Remove skills, sergivse, testimonials and all that junk
 
 Blog pages:
@@ -23,8 +23,6 @@ Blog pages:
     ☐ Fix wide page issue
 
 Components:
-  ☐ Remove the syled components stuff, I just don't like it
-    ☐ The Timeline component needs doing
   ☐ Kent C Dodds has a good typescript functional component post. Move away from React.FC.
 
 Meta Tags:
@@ -34,14 +32,9 @@ Meta Tags:
   ☐ good SEO tags
   ☐ Author rel me stuff? I know it exists, go find out.
 
-Continuous Deployment:
-  ✘ Set up a github action to deploy when pushing the master branch @cancelled(21-04-08 15:24)
-  ☐ https://dev.to//kenessajr/deploy-a-react-app-to-digitalocean-using-github-actions-and-docker-4pln
-  ✘ Need to check in on my DO server @cancelled(21-04-08 15:23)
-    ✘ Updates? @cancelled(21-04-08 15:23)
-    ✘ Node js version @cancelled(21-04-08 15:24)
-    ✘ Security updates? @cancelled(21-04-08 15:24)
-    ✘ Ubuntu 20 lts @started(20-05-08 14:00) @cancelled(21-04-08 15:24) @wasted(47w6d1h24m4s)
-  ✔ sort out ssh keys for my desktop WSL @done(20-05-08 13:59)
-  
-
+Projects:
+  Paint app:
+    ☐ Change complimentary colours to flex, not grid.
+    ☐ Check paint data
+    ☐ Add more paint ranges
+      ☐ Then add a filter for paint ranges

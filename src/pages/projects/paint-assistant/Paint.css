@@ -17,79 +17,62 @@ body {
   /* TODO: make sure transition doesn't happen on page load  */
 }
 
+.paint-search {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--dracula-background);
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.colour-details-container {
+.filters {
+ width: 100%;
+}
+/* 
+.filters > :not(:first-child) {
+  margin-left: 2rem;
+} */
+
+.filters input[type="radio"] {
+  display: none;
+}
+
+
+/* 
+ * Complimentary colours
+
+
+ Really should use flex column
+ Do that next time
+ */
+
+.complimentary-colour-container {
   display: grid;
   grid-template-areas: "chosen centre complimentary";
 }
 
-.colour-details-container > .chosen {
+.complimentary-colour-container > .chosen {
   grid-area: "chosen";
   max-width: 150px;
   justify-self: right;
   margin-right: 3rem;
 }
 
-.colour-details-container > .centre {
+.complimentary-colour-container > .centre {
   grid-area: "centre";
 }
 
-.colour-details-container > .complimentary {
+.complimentary-colour-container > .complimentary {
   grid-area: "complimentary";
   max-width: 150px;
 }
 
-.filters {
-}
 
-.filters > :not(:first-child) {
-  margin-left: 2rem;
-}
-
-.filters input[type="radio"] {
-  display: none;
-}
-
-.filter-button {
-  border-radius: 5px;
-  border: var(--text-colour) 2px solid;
-  padding: 0.5rem 1rem;
-}
-
-.filter-button.active {
-  /* background: var(--text-colour); */
-}
 
 /* 
-.filter-button:checked {
-    border: var(--heading-colour) 2px solid;
-}
+ * All the paint stuff
+ */
 
-.filter-button:checked {
-
-} */
-
-input[type="text"] {
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem 1rem;
-}
-
-.paint-controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.paint-search {
-  color: var(--dracula-background);
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.paint-filter {
-  /* come back to this */
-}
 
 ul {
   padding-inline-start: 0px;
@@ -121,7 +104,6 @@ li:hover {
 .paint-list > li {
   grid-column: span 1;
   grid-row: span 1;
-  border-radius: var(--border-radius);
   min-width: 150px;
 }
 
@@ -155,24 +137,4 @@ li:hover {
   border-radius: var(--border-radius);
   margin-top: 1.5rem;
   border: 1px solid black;
-}
-
-.m1 {
-  margin: 1rem;
-}
-.m2 {
-  margin: 2rem;
-}
-.m3 {
-  margin: 3rem;
-}
-
-.p1 {
-  padding: 1rem;
-}
-.p2 {
-  padding: 2rem;
-}
-.p3 {
-  padding: 3rem;
 }

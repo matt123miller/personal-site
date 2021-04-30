@@ -1,16 +1,12 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 
 import Paint from './Paint';
 import paintData from '../data';
 
-export default ComplimentaryColours;
-
-function ComplimentaryColours(props) {
+export default function ComplimentaryColours(props) {
 
     const { chosenColour } = props;
 
-
-    
     // set to the opposite of our chosen colour
     const colourAsRgb = hexToRgb(chosenColour.slice(1));
     
@@ -19,17 +15,13 @@ function ComplimentaryColours(props) {
     
     const {chosenPaint, complimentaryPaint} = findPaintsByHex(chosenColour, complimentaryColour, paintData);
     
-    return <div>
-        
+    return (<div className="complimentary-colour-container">
+
         {chosenPaint}
-
-        {/* <span>Chosen colour: <span style={{ color: chosenColour, margin: '1rem' }}></span></span> */}
         <ColourGradient chosenColour={chosenColour} complimentaryColour={complimentaryColour}/>
-        {/* < span > Complimentary colour: <span style={{ color: complimentaryColour, margin: '1rem' }}>{complimentaryColour}</span></span > */}
-
         {complimentaryPaint}
 
-    </div>
+    </div>)
 }
 
 
