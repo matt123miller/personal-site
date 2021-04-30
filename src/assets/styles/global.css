@@ -9,6 +9,9 @@
 Move the purge end below the tailwind imports for release   */
 
 body {
+
+  --default-animation-transition: 0.15s linear;
+  /* Colours */
   --dracula-background: #282a36;
   --dracula-foreground: #f8f8f2;
   --dracula-selection: #44475a;
@@ -255,7 +258,7 @@ li, p {
 .link-card-content {
   background-color: var(--dracula-selection);
   border: 1px solid var(--dracula-cyan);
-  transition: 0.15s linear;
+  transition: var(--default-animation-transition);
   @apply flex flex-col mx-3 rounded-lg;
 }
 

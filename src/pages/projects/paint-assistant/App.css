@@ -55,7 +55,7 @@ main {
 }
 
 .filters {
-    margin-bottom: 2rem;
+    
 }
 
 .filters > :not(:first-child) {
@@ -73,8 +73,7 @@ main {
 }
 
 .filter-button.active {
-    color: var(--bg);
-    background: var(--text-colour);
+    /* background: var(--text-colour); */
 }
 
 /* 
@@ -120,7 +119,11 @@ ul {
 
 li {
     list-style: none;
-    transition: all 0.5s;
+    transition: var(--default-animation-transition);
+}
+li::before {
+  content: "";
+  color: var(--dracula-comment);
 }
 
 li:hover {
@@ -145,8 +148,15 @@ li:hover {
 }
 
 .paint-container {
-    background-color: var(--bg-panel);
+    max-height: 10rem;
     padding-top: 1rem;
+    padding-bottom: 6rem;
+    border: var(--dracula-foreground) solid 1px;
+    border-radius: 0.5rem;
+}
+
+.paint-container > * {
+  padding: 0 0.5rem;
 }
 
 .paint-pot {
