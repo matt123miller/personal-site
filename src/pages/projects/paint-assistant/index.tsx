@@ -14,7 +14,7 @@ export default function PaintMixer() {
   return (
     <Layout>
       <SEO title="About Me" />
-      <main>
+      <main className="paint-picker-app">
         <h1>Painting Colour Assistant</h1>
         <PaintsList paintData={paintData} />
       </main>
